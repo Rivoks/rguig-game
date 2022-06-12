@@ -7,6 +7,8 @@ define e = Character("Eileen")
 
 define a = Character("Adamu")
 
+define aya = Character("Aya")
+
 
 # The game starts here.
 
@@ -29,6 +31,8 @@ label start:
     a "You've created a new Ren'Py game."
 
     a "Once you add a story, pictures, and music, you can release it to the world!"
+
+    aya "Pète moi le cul dam dam"
 
     # This ends the game.
 
