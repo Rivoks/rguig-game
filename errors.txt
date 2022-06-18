@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 202: expected statement.
-    scence amphiSchool with flash
-                       ^
+File "game/script.rpy", line 172: expected statement.
+    renpy.music.set_volume(0.00, delay=0, channel='music')
+                                                          ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sat Jun 18 17:50:42 2022
+Sun Jun 19 00:08:28 2022

@@ -1,14 +1,14 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'characters/aya/sorry.png'>:
-  File "game/script.rpy", line 184, in script
+While loading <'Image' u'characters/adamu/smileSchool.png'>:
+  File "game/script.rpy", line 259, in script
     adamu "Et voilà c'est nickel !"
-IOError: Couldn't find file 'characters/aya/sorry.png'.
+IOError: Couldn't find file 'characters/adamu/smileSchool.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 184, in script
+  File "game/script.rpy", line 259, in script
     adamu "Et voilà c'est nickel !"
   File "/Applications/Renpy/renpy/ast.py", line 721, in execute
     renpy.exports.say(who, what, *args, **kwargs)
@@ -62,9 +62,9 @@ Full traceback:
     surf = image.load()
   File "/Applications/Renpy/renpy/display/im.py", line 706, in load
     raise e
-IOError: Couldn't find file 'characters/aya/sorry.png'.
+IOError: Couldn't find file 'characters/adamu/smileSchool.png'.
 
 Darwin-21.1.0-x86_64-i386-64bit
 Ren'Py 7.4.11.2266
 RGUIG GAME 1.0
-Sat Jun 18 17:55:04 2022
+Sun Jun 19 00:50:16 2022
