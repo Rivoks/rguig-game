@@ -28,7 +28,10 @@ init:
         "background/env/corridors_school.png"   
     
     image amphiSchool:
-        "background/env/amphi_school.png"        
+        "background/env/amphi_school.png"
+    
+    image chairsAmphi:
+        "background/env/chairs_amphi.png"        
     
     image stairsSchool:
         "background/env/stairs_school.png"    
@@ -85,6 +88,15 @@ init:
         "characters/adamu/sorry2.png"
         zoom characterSize
 
+    image adamuAngry:
+        "characters/adamu/angry.png"
+        zoom characterSize
+
+    image adamuVeryAngry:
+        "characters/adamu/very_angry.png"
+        zoom characterSize
+
+
     image ayaHurt:
         "characters/aya/hurt.png"
         zoom characterSize
@@ -109,12 +121,28 @@ init:
         "characters/aya/blushed2.png"
         zoom characterSize
 
+    image mamiStoic:
+        "characters/mami/stoic.png"
+        zoom characterSize
+
+    image mamiAnnoyed:
+        "characters/mami/annoyed.png"
+        zoom characterSize
+
+    image mamiSpeaking:
+        "characters/mami/speaking.png"
+        zoom characterSize
+
+
+
 
 # The game starts here.
 
 label start:
 
     scene adamuRoom
+
+    jump scene0_part2
 
     "{i}Montmorency, dans les tréfons du 95.{/i}"
     "{i}Dans la pénombre de sa chambre miteuse, c’est à la lumière bleutée de son téléphone qu’un jeune homme allait apprendre la nouvelle qui allait tout changer...{/i}"
@@ -336,12 +364,87 @@ label start:
     
     show adamuConfident
     adamu "Tout commence ici."
+    
+    stop music
+    stop sound
+
+    jump scene0_part2
+
+
+label scene0_part2:
 
     play sound "audio/fx/flashback.mp3" volume 0.5
-
+    
     scene amphiSchool with flash
 
-    "{i}TO BE CONTINUED...{/i}"
-    pause 5
+    play sound "audio/fx/classroom.mp3" volume 0.01 fadein 1.0
+
+    show adamuSurprisedSchool
+    adamu "Waaah ! C'est beaucoup plus grand que ce que je pensais."
+    
+    show  adamuStun
+    adamu "Y'a presque plus de place, merde."
+    adamu "Ah j'en vois une là-bas !"
+    "{i}*Bruit de pas, Adam se faufile entre les rangs*{/i}"
+
+    show adamuSorry
+    adamu "Pardon, excusez-moi."
+    adamu "..."
+    hide adamuSorry
+    show  adamuStun
+    adamu "Tiens, je crois que j'ai déjà vu l'homme qui parle sur une photo, ça doit être le principal"
+    "{i}*Adam s'assoie*{/i}"
+
+    scene chairsAmphi with dissolve
+
+    stop sound fadeout 0.5
+
+    show adamuStun
+    adamu "On voit pas grand chose d'ici"
+    show adamuSorry
+    adamu "Bon, c'est pas comme si j'allais suivre de toute façon."
+    show adamuStun
+    adamu "Tout le monde autour de moi est en train de prendre des notes."
+    adamu "..."
+    show adamuSorry2
+    adamu "J'ai l'impression que le prof me fixe"
+
+    show adamuAngry
+    adamu "Je dois me fondre dans la masse, vite !"
+    "{i}*Prends une feuille*{/i}"
+    
+    show adamuVeryAngry
+    adamu "Merde, j'ai oublié ma trousse, je suis vraiment une pute de pute !"
+
+    show adamuSorry
+    "{i}*Se tourne sur sa droite*{/i}"
+    adamu "Excuse-moi, t'au..."
+
+    scene chairs_amphi with dissolve
+
+    show adamuSorry at right
+    show mamiStoic at left
+
+    noname "Tiens. Il s'appelle revient."
+
+    "{i}*Donne un stylo*{/i}"
+
+    show adamuSurprise2 at right
+    
+    adamu "Mer-mer-mer..."
+    show mamiAnnoyed at left
+    noname "?"
+    adamu "Euh..."
+
+    scene chairsAmphi with dissolve
+
+    "{i}La présentation suivi son cours mais Adam fut incapable de se concentrer.{/i}"
+    "{i}Il était stupéfait par la beauté et la prestance de ce qu’il appelait une Basic White Bitch, être qu’il a toujours convoité dans ses rêves les plus profonds.{/i}"
+    "{i}Il faut dire que que cette jeune blonde à l’air désinvolte parrassait désintéressée aux premiers abords mais dégageait une certaine grâce à travers ses gestes très tendres.{/i}"
+    "{i}Adam resta circonspect, on aurait dit que le temps s'était figé pour lui.{/i}"
+    "{i}La présentation se termina sans qu'il n'ait pu rien dire.{\i}"
+    "{i}Alors qu'il se ressassait ses échecs précédents, pris dans un élan de courage, c'est avec une voix suave qu'il disa :{/i}"
+
+    show adamuSorry at right with dissolve
 
     return
