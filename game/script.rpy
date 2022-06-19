@@ -3,6 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 define adamu = Character("Adamu")
+define mami = Character("Mami")
 define noname = Character("???")
 
 define characterSize = .8
@@ -131,6 +132,10 @@ init:
 
     image mamiSpeaking:
         "characters/mami/speaking.png"
+        zoom characterSize
+
+    image mamiAsking:
+        "characters/mami/asking.png"
         zoom characterSize
 
 
@@ -377,7 +382,7 @@ label scene0_part2:
     
     scene amphiSchool with flash
 
-    play sound "audio/fx/classroom.mp3" volume 0.01 fadein 1.0
+    play sound "audio/fx/classroom.mp3" volume 0.1 fadein 1.0
 
     show adamuSurprisedSchool
     adamu "Waaah ! C'est beaucoup plus grand que ce que je pensais."
@@ -397,7 +402,8 @@ label scene0_part2:
 
     scene chairsAmphi with dissolve
 
-    stop sound fadeout 0.5
+    stop sound fadeout 3
+    play music "audio/ost/apollo_justice.mp3" volume 0.1 fadein 1.0
 
     show adamuStun
     adamu "On voit pas grand chose d'ici"
@@ -411,11 +417,15 @@ label scene0_part2:
 
     show adamuAngry
     adamu "Je dois me fondre dans la masse, vite !"
+
+    play sound "audio/fx/sheet_paper.mp3" volume 0.5
     "{i}*Prends une feuille*{/i}"
     
-    show adamuVeryAngry
+    play sound "audio/fx/collision.mp3" volume 0.8
+    show adamuVeryAngry with vpunch
     adamu "Merde, j'ai oublié ma trousse, je suis vraiment une pute de pute !"
 
+    scene chairsAmphi
     show adamuSorry
     "{i}*Se tourne sur sa droite*{/i}"
     adamu "Excuse-moi, t'au..."
@@ -429,11 +439,13 @@ label scene0_part2:
 
     "{i}*Donne un stylo*{/i}"
 
-    show adamuSurprise2 at right
+    show adamuSurprisedSchool at right
     
     adamu "Mer-mer-mer..."
-    show mamiAnnoyed at left
+    show mamiAsking at left
     noname "?"
+
+    show adamuStun at right
     adamu "Euh..."
 
     scene chairsAmphi with dissolve
@@ -446,5 +458,9 @@ label scene0_part2:
     "{i}Alors qu'il se ressassait ses échecs précédents, pris dans un élan de courage, c'est avec une voix suave qu'il disa :{/i}"
 
     show adamuSorry at right with dissolve
+    show mamiStoic at left with dissolve
+    adamu "Tiens, merci. Moi c'est Adam, et toi c'est...?"
+    mami "Mami."
+    mami "Mami Aoi."
 
     return
