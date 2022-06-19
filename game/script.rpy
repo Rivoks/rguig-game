@@ -537,4 +537,10 @@ label start:
     "{i}La vraie rentrée se faisant dans une semaine, les jours passèrent sans trop de bruits."
     "{i} TO BE CONTINUED..."
 
+    jump scene1
+
+
+    label scene1:
+        "ZIZI" "TEST"
+
     return
