@@ -2,13 +2,22 @@
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-define adamu = Character("Adamu")
-define mami = Character("Mami")
+define adamu = Character("Adamu", color="#ce2806")
+define mami = Character("Mami", color="#ce06a4")
 define noname = Character("???")
 
 define characterSize = .8
 
+init python:
+
+    config.underlay.append(
+        renpy.Keymap(
+            mousedown_1 = lambda: renpy.run(renpy.play("audio/fx/a_button.mp3"))
+        )
+    )
+
 init:
+
 
     # Custom transitions
 
@@ -26,17 +35,17 @@ init:
         "background/env/front_school.png"
 
     image corridorsSchool:
-        "background/env/corridors_school.png"   
-    
+        "background/env/corridors_school.png"
+
     image amphiSchool:
         "background/env/amphi_school.png"
-    
+
     image chairsAmphi:
-        "background/env/chairs_amphi.png"        
-    
+        "background/env/chairs_amphi.png"
+
     image stairsSchool:
-        "background/env/stairs_school.png"    
-    
+        "background/env/stairs_school.png"
+
     # Background Phone
 
     image msgAdmissL2:
@@ -60,7 +69,7 @@ init:
     image adamuSurprise:
         "characters/adamu/surprised.png"
         zoom characterSize
-    
+
     image adamuSurprisedSchool:
         "characters/adamu/surprised2.png"
         zoom characterSize
@@ -68,7 +77,7 @@ init:
     image adamuSmileSchool:
         "characters/adamu/smile_school.png"
         zoom characterSize
-    
+
     image adamuSpeakingSerious:
         "characters/adamu/speaking_serious.png"
         zoom characterSize
@@ -113,11 +122,11 @@ init:
     image ayaSorry:
         "characters/aya/sorry.png"
         zoom characterSize
-    
+
     image ayaBlushed:
         "characters/aya/blushed.png"
         zoom characterSize
-    
+
     image ayaBlushed2:
         "characters/aya/blushed2.png"
         zoom characterSize
@@ -138,6 +147,10 @@ init:
         "characters/mami/asking.png"
         zoom characterSize
 
+    image mamiBlush:
+        "characters/mami/blush.png"
+        zoom characterSize
+
 
 
 
@@ -146,8 +159,6 @@ init:
 label start:
 
     scene adamuRoom
-
-    jump scene0_part2
 
     "{i}Montmorency, dans les tréfons du 95.{/i}"
     "{i}Dans la pénombre de sa chambre miteuse, c’est à la lumière bleutée de son téléphone qu’un jeune homme allait apprendre la nouvelle qui allait tout changer...{/i}"
@@ -181,7 +192,7 @@ label start:
     adamu "Ololo c'est trop, c'est trop !"
     adamu "J'AI VALIDÉ, JE SUIS PLUS STUCK L1 !"
     adamu "Mimi ne me rattrapera pas d'aussitôt héhé..."
-    
+
     hide adamuChillJoy with dissolve
 
     "{i}Incroyable ! Pour la première fois en trois ans, cet ignoble individu valida sa première année universitaire.{/i}"
@@ -196,7 +207,7 @@ label start:
     stop music fadeout 1.0
 
     "{i}Trois mois plus tard. Le jour de la rentrée.{/i}"
-    
+
     adamu "Hmm..."
     play sound [ "<silence 1>", "audio/fx/anime_wow.mp3" ] volume 0.05
     adamu "Ah ah ! Iyaaaaaaa ! Pas ici Sawa-chan..."
@@ -207,7 +218,7 @@ label start:
 
     adamu "Hum ?"
     adamu "..."
-    
+
     play sound "audio/fx/collision.mp3" volume 0.8
     show adamuSurprise with vpunch
 
@@ -235,7 +246,7 @@ label start:
 
     play sound "audio/fx/run.mp3" volume 0.5
 
-    "{i}*Cours*{/i}"
+    "{i}*Court*{/i}"
 
     adamu "Je suis presque arrivé, encore un petit effort."
 
@@ -243,7 +254,7 @@ label start:
 
     show adamuSmileSchool
     adamu "C'est ici !"
-    
+
     stop music fadeout 0.5
     stop sound fadeout 0.5
 
@@ -264,17 +275,17 @@ label start:
 
     scene corridorsSchool with fade
     show adamuSorry with dissolve
-    
+
     stop sound fadeout 0.5
 
     adamu "Je suis bientôt arrivé, c'est juste après ces marches"
     "{i}*Cours*{/i}"
 
     scene stairs_school with fade
-    
+
     hide adamuSpeakingSerious
     show adamuConfident
-    
+
     adamu " C'est bon ma nouvelle vie m'att..."
 
     hide adamuConfident
@@ -291,21 +302,21 @@ label start:
 
     show ayaHurt at left with dissolve
     noname "Ouille..."
-    
+
     play sound "audio/fx/exclamation.mp3" volume 0.4
     play music "audio/ost/flying_fairy.mp3" volume 0.1 fadein 1.0 loop
 
     hide ayaHurt at left
-    show ayaSurprise at left 
+    show ayaSurprise at left
 
     noname "Mince, mes affaires..."
-    
+
     show adamuSorry2 at right
 
     adamu "Rien de cassé ? Je suis désolé..."
 
     hide ayaSurprise at left
-    show ayaCalm at left 
+    show ayaCalm at left
 
     noname "Je vais bien, merci."
 
@@ -347,12 +358,12 @@ label start:
     scene stairs_school
     show adamuSorry with dissolve
 
-    adamu "Elle était pressé, c'est sûrement pour ça haha..."  
+    adamu "Elle était pressé, c'est sûrement pour ça haha..."
 
     show adamuStun
 
     adamu "Enfin je crois..."
-    
+
     hide adamuStun
     show adamuSorry
 
@@ -366,33 +377,29 @@ label start:
     adamu "Voilà la porte de l'amphi."
 
     play sound "audio/fx/door_open.mp3" volume 0.5
-    
+
     show adamuConfident
     adamu "Tout commence ici."
-    
+
     stop music
     stop sound
 
-    jump scene0_part2
-
-
-label scene0_part2:
-
     play sound "audio/fx/flashback.mp3" volume 0.5
-    
+
     scene amphiSchool with flash
 
     play sound "audio/fx/classroom.mp3" volume 0.1 fadein 1.0
 
     show adamuSurprisedSchool
     adamu "Waaah ! C'est beaucoup plus grand que ce que je pensais."
-    
+
     show  adamuStun
     adamu "Y'a presque plus de place, merde."
     adamu "Ah j'en vois une là-bas !"
     "{i}*Bruit de pas, Adam se faufile entre les rangs*{/i}"
 
     show adamuSorry
+    play music "audio/ost/quiet_intelligence.mp3" volume 0.1 fadein 1.0
     adamu "Pardon, excusez-moi."
     adamu "..."
     hide adamuSorry
@@ -403,7 +410,7 @@ label scene0_part2:
     scene chairsAmphi with dissolve
 
     stop sound fadeout 3
-    play music "audio/ost/apollo_justice.mp3" volume 0.1 fadein 1.0
+
 
     show adamuStun
     adamu "On voit pas grand chose d'ici"
@@ -420,7 +427,7 @@ label scene0_part2:
 
     play sound "audio/fx/sheet_paper.mp3" volume 0.5
     "{i}*Prends une feuille*{/i}"
-    
+
     play sound "audio/fx/collision.mp3" volume 0.8
     show adamuVeryAngry with vpunch
     adamu "Merde, j'ai oublié ma trousse, je suis vraiment une pute de pute !"
@@ -428,6 +435,7 @@ label scene0_part2:
     scene chairsAmphi
     show adamuSorry
     "{i}*Se tourne sur sa droite*{/i}"
+    stop music fadeout 1.0
     adamu "Excuse-moi, t'au..."
 
     scene chairs_amphi with dissolve
@@ -435,12 +443,15 @@ label scene0_part2:
     show adamuSorry at right
     show mamiStoic at left
 
+
+    play music "audio/ost/bwb_encounter.mp3" volume 0.1 fadein 1.0
+
     noname "Tiens. Il s'appelle revient."
 
     "{i}*Donne un stylo*{/i}"
 
     show adamuSurprisedSchool at right
-    
+
     adamu "Mer-mer-mer..."
     show mamiAsking at left
     noname "?"
@@ -462,5 +473,68 @@ label scene0_part2:
     adamu "Tiens, merci. Moi c'est Adam, et toi c'est...?"
     mami "Mami."
     mami "Mami Aoi."
+
+    show adamuSmileSchool at right
+    adamu "Enchanté Mami !"
+    adamu "Je ne crois pas t'avoir déjà vu ici. Tu es nouvelle ?"
+    mami "Ouais, j'habite assez loin."
+
+    show adamuSurprisedSchool at right
+    adamu "Tu ne connais pas grand monde alors, je suppose."
+    mami "Personne, non."
+
+    scene chairs_amphi with dissolve
+    show mamiStoic with dissolve
+    "{i}Cette solitude ne semblait pas l’inquiéter pour autant, elle semblait y être habituée."
+
+    scene chairsAmphi with dissolve
+    show mamiStoic at left with dissolve
+    show adamuSpeakingSerious at right with dissolve
+
+    play sound "audio/fx/breathing.mp3" volume 0.5
+    adamu "Ah ..."
+    adamu "..."
+    adamu "Dis est-ce que t'as Twi..."
+    adamu "Twi..."
+    adamu "Toi..."
+    adamu "Toiture !"
+
+    stop music fadeout 1.0
+    show mamiAsking at left
+    mami "Toiture ?"
+    show adamuSorry at right
+    adamu "Est-ce que t'as une toiture ?"
+    mami  "..."
+
+    scene chairsAmphi with dissolve
+    play music "audio/ost/dramatic_kaguya.mp3" volume 0.1 fadein 1.0
+
+    "{i}Adam bégaya."
+    "{i}Catastrophe. Lui qui avait passé son été à travailler son éloquence en prévision de ce genre d’opportunité retomba dans ses anciens travers."
+    "{i}Mami le fixait d’un air décontenancé sans dire un mot."
+
+    show mamiSpeaking with dissolve
+    "{i}Tout autour de lui devenait trouble, tout semblait perdu…"
+
+    hide mamiSpeaking
+    stop music fadeout 1.0
+
+    play sound [ "<silence 1>", "audio/fx/excuse_moi.mp3" ] volume 0.2
+    "{i}Une voix retentit: « Excuse-moi si j’tai blessé… »."
+    "{i}En l’espace d’une fraction de seconde, lorsque tout semblait contre lui, Adamu demanda de manière intrépide les coordonnées de Mami."
+
+    show adamuSpeakingSerious with dissolve
+    play music "audio/ost/confess_kaguya.mp3" volume 0.1 fadein 1.0
+    adamu "Est-ce que t'as Twittâ ?"
+    hide adamuSpeakingSerious
+    show mamiBlush with dissolve
+
+    "{i}Surprise, Mami donna son Twittâ en détournant les yeux, comme d’un air légèrement gênée."
+    hide mamiBlush
+    "{i}Bénédiction divine, baraka du tout puissant, notre Rguig venait de réaliser l’impossible."
+    "{i}Désormais c’est sûr, plus rien ne sera comme avant."
+    scene black with dissolve
+    "{i}La vraie rentrée se faisant dans une semaine, les jours passèrent sans trop de bruits."
+    "{i} TO BE CONTINUED..."
 
     return

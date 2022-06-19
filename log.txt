@@ -1,54 +1,56 @@
-Sun Jun 19 17:05:46 2022
-Darwin-21.1.0-x86_64-i386-64bit
+Sun Jun 19 19:19:38 2022
+Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
  
 
-Bootstrap to the start of init.init took 0.06s
+Bootstrap to the start of init.init took 0.13s
 Early init took 0.00s
-Loader init took 0.00s
-Loading error handling took 0.01s
-Loading script took 0.14s
-Loading save slot metadata. took 0.01s
+Loader init took 0.03s
+Loading error handling took 0.05s
+Loading script took 0.45s
+Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.02s
-Loading analysis data took 0.01s
+Running init code took 0.10s
+Loading analysis data took 0.04s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
-Dump and make backups. took 0.04s
+Backing up script files to 'C:\\Users\\AKSIL\\AppData\\Roaming/RenPy/backups\\rguig-game':
+Dump and make backups. took 0.11s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.01s
+Initial gc. took 0.04s
 DPI scale factor: 1.000000
-Creating interface object took 0.00s
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
 Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.04s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.16s
+Interface start took 0.20s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1728, 1117)
+primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'Apple'
-Renderer: 'Apple M1 Pro'
-Version: '2.1 Metal - 76.1'
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 570/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 391.35'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1623, 913) drawable=(3246, 1826)
+Screen sizes: virtual=(1920, 1080) physical=(1623, 913) drawable=(1623, 913)
 Maximum texture size: 4096x4096
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.01s
-Load screen analysis took 0.02s
+Load screen analysis took 0.04s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
