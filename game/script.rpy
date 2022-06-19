@@ -163,6 +163,9 @@ label start:
     "{i}Montmorency, dans les tréfons du 95.{/i}"
     "{i}Dans la pénombre de sa chambre miteuse, c’est à la lumière bleutée de son téléphone qu’un jeune homme allait apprendre la nouvelle qui allait tout changer...{/i}"
 
+    jump scene2
+
+
     play music "audio/ost/violet_sky.mp3" volume 0.1 loop fadein 1.0
     show adamuChill with dissolve
 
@@ -535,6 +538,12 @@ label start:
     "{i}Désormais c’est sûr, plus rien ne sera comme avant."
     scene black with dissolve
     "{i}La vraie rentrée se faisant dans une semaine, les jours passèrent sans trop de bruits."
+    
+    jump scene2
+
+label scene2:
+    scene black
     "{i} TO BE CONTINUED..."
+
 
     return
