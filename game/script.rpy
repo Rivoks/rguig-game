@@ -4,6 +4,7 @@
 # name of the character.
 define adamu = Character("Adamu", color="#ce2806")
 define mami = Character("Mami", color="#ce06a4")
+define aya = Character("Aya", color="#06ce67")
 define noname = Character("???")
 
 define characterSize = .8
@@ -45,6 +46,18 @@ init:
 
     image stairsSchool:
         "background/env/stairs_school.png"
+
+    image classroomExt:
+        "background/env/classroom_ext.jpg"
+
+    image classroomInt:
+        "background/env/classroom_int.jpg"
+
+    image streetEve:
+        "background/env/street_classic_eve.jpg"
+
+    image adamuHouseExt:
+        "background/env/adamu_house_ext.jpg"
 
     # Background Phone
 
@@ -151,8 +164,9 @@ init:
         "characters/mami/blush.png"
         zoom characterSize
 
-
-
+    image yoshida:
+        "characters/yoshida/yoshida.png"
+        zoom characterSize
 
 # The game starts here.
 
@@ -541,6 +555,155 @@ label start:
 
 
     label scene1:
-        "ZIZI" "TEST"
+        scene classroomExt with dissolve
+        "{i}Lundi 5 septembre 2022, 8h03"
+        play sound "audio/fx/classroom.mp3" volume 0.1 fadein 1.0
+
+        show adamuSmileSchool with dissolve
+
+        adamu "Voici ma classe..."
+        adamu "On dirait que des groupes sont déjà formés."
+        adamu "Ils doivent se déjà connaître."
+        adamu "Voyons voir, au niveau des meufs..."
+
+        show adamuSpeakingSerious
+
+        "*Jette un rapide coup d'oeil*"
+        adamu "..."
+
+        show adamuAngry
+
+        adamu "Ca recommence la putain de sa mère..."
+
+        show adamuVeryAngry
+
+        adamu "Y'a que des chinois 1m10 les bras levés comme en 2nd"
+        "*Zieute*"
+
+        show adamuAngry
+
+        adamu "Aucun gros tarpé de lopessa à l'horizon."
+        adamu "¯\_(ツ)_/¯"
+
+        adamu "J'avais l'espoir d'être dans la même classe que Mami"
+        adamu "Mes espoirs sont brisés."
+        stop sound fadeout 3
+
+
+        #Ajouter Ost
+        scene classroomExt with dissolve
+        play music "audio/ost/scattered_flowers.mp3" volume 0.1 loop fadein 1.0
+
+        "{i}C'est alors qu'une sillouhette elancée se dessina devant lui."
+        "{i}Contre toute attente, il reconnu une beauté innoncente."
+        "{i}Comment pourrait-il l'oublier."
+        "{i}Ce jour-là l'humanité s'en est souvenue."
+
+        show ayaSurprise with dissolve
+
+        noname "Oh mais c'est toi !"
+
+
+        "{i}À ce moment il comprit."
+        "{i}Son instinct de PALM ne le trompait jamais: c’était ce qu’il appelait une « Hlel »."
+        "{i}Une fille pudique, innocente et qui se retrouvait décontenancée en parlant avec un homme."
+
+        scene classroomExt with dissolve
+
+        show adamuSurprisedSchool at left with dissolve
+        show ayaCalm at right with dissolve
+
+        adamu "Salut, comment ça va depuis le temps ?"
+        noname "Bien merci, au fait moi c'est Aya"
+        aya "Aya Kataragi."
+        adamu "Adam, enchanté."
+
+        show adamuSmileSchool at left
+
+        adamu "On est dans la même classe, c'est cool."
+        adamu "J'espère qu'on va bien s'entendre"
+
+        show ayaBlushed at right
+
+        aya "Haha..."
+        aya "Euh, le cours va commencer, allons-y Adam."
+
+        play sound "audio/fx/door_open.mp3" volume 1.0
+        stop sound
+
+        scene classroomInt with dissolve
+        show yoshida with dissolve
+
+
+
+        "Yoshida" "Bonjour, je m'appelle Yoshida et je serai votre professeur principal pour ce semestre."
+        "Rentrons dans le vif du sujet sans tarder."
+        "Ce semestre, vous aurez un projet d'informatique à réaliser en binôme."
+        "Le choix du binôme est libre, bien évidemment."
+
+        hide yoshida with dissolve
+
+        "{i}Alors que les groupes commencaient à se former et à discuter entre eux, la petite Aya semblait esseulée."
+
+        show ayaCalm
+
+        "{i}Adam ne resta pas insensible à la détresse d'Aya. Dès lors, il activa le mode « Bête de Guerre »."
+        "{i}C'est avec un air confiant, presque sournois, qu'il s'approcha à pas de loup d'Aya."
+
+        scene classroomInt with dissolve
+        show adamuSmileSchool at left with dissolve
+        show ayaCalm at right with dissolve
+
+        adamu "Aya t'as un binôme pour le projet ?"
+
+        show ayaBlushed at right
+        aya "Ah, euh..."
+        aya "Non.."
+        adamu "Ecoute, on peut se mettre ensemble pour le projet si tu veux."
+        aya "Hum..."
+
+        show ayaBlushed2 at right
+
+        aya "Ca ne te dérange pas que ce soit avec moi ?"
+        adamu "Bien sûr que non"
+
+        show ayaCalm at right
+        aya "Merci, Adam."
+
+        scene classroomInt with dissolve
+
+        "{i}Le cours se termina et les élèves commencaient à rentrer chez eux."
+
+        scene corridorsSchool with dissolve
+        show adamuSmileSchool at left with dissolve
+        show ayaBlushed at right with dissolve
+
+        aya "Euh..."
+        show ayaCalm at right
+        aya "Merci pour aujourd'hui Adam, je me suis bien amusée."
+        show adamuConfident at left
+
+        adamu "Tout le plaisir est pour moi."
+        aya "Au fait..."
+        aya "Adam, c'est quoi ton snapuchatu ?"
+        show adamuSurprisedSchool at left
+        adamu "irongaren.euw, pourquoi ?"
+        aya "C'est pour qu'on puisse échanger pour le projet."
+        show adamuStun at left
+        adamu "Ah oui, le projet bien sûr."
+
+        "{i}Evidemment notre ventre-en-coeur ne l’entendit pas de cette oreille."
+        "{i}Les dieux étaient avec lui, il savait que cette demande n'était pas anodine."
+
+        show streetEve with dissolve
+        play music "audio/ost/hero.mp3" volume 0.1  fadein 1.0
+
+        "{i}Sur le chemin du retour, Adamu remercia les cieux de la bonne fortune qui l’avait touché."
+        "{i}Il ne pouvait attendre de rentrer chez lui et envoya le premier message à Aya et discutait de temps en temps avec Mami."
+        "{i}Il se dit qu’il était enfin sur la voie légendaire de Maru Aruba, samouraï du passé et symbole de virilité pour notre héros."
+        "{i}Ainsi se termina la rentrée de notre jeunot, il pouvait se reposer il l'avait bien mérité."
+
+        stop music
+
 
     return

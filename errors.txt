@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 489: play requires a channel
-    play "audio/fx/breathing.mp3" volume 0.5
-         ^
+File "game/script.rpy", line 570: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
+    "*Jette un rapide coup d'oeil*"
+    ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sun Jun 19 18:17:06 2022
+Mon Jun 27 16:34:21 2022
