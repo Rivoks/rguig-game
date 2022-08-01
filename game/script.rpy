@@ -46,6 +46,9 @@ init:
     image stairsSchool:
         "background/env/stairs_school.png"
 
+    image cafeteriaSchool:
+        "background/env/cafetaria.png"
+
     # Background Phone
 
     image msgAdmissL2:
@@ -53,6 +56,8 @@ init:
 
 
     # Characters
+
+    # Adamu
 
     image adamuChill:
         "characters/adamu/chill.png"
@@ -106,6 +111,11 @@ init:
         "characters/adamu/very_angry.png"
         zoom characterSize
 
+    image adamuVeryHappy:
+        "characters/adamu/very_happy.png"
+        zoom characterSize
+
+    # Aya
 
     image ayaHurt:
         "characters/aya/hurt.png"
@@ -135,6 +145,8 @@ init:
         "characters/mami/stoic.png"
         zoom characterSize
 
+    # Mami
+
     image mamiAnnoyed:
         "characters/mami/annoyed.png"
         zoom characterSize
@@ -149,6 +161,18 @@ init:
 
     image mamiBlush:
         "characters/mami/blush.png"
+        zoom characterSize
+
+    image mamiSmile:
+        "characters/mami/smile.png"
+        zoom characterSize
+
+    image mamiAngryCute:
+        "characters/mami/angry-cute.png"
+        zoom characterSize
+
+    image mamiTaunt:
+        "characters/mami/taunt.png"
         zoom characterSize
 
 
@@ -542,8 +566,186 @@ label start:
     jump scene2
 
 label scene2:
-    scene black
-    "{i} TO BE CONTINUED..."
 
+    scene frontSchool with dissolve
+
+    show mamiStoic at left
+
+    show adamuSmileSchool at right
+    
+    mami "..."
+    
+    adamu "Salut Mami!"
+
+    show mamiAngryCute at left
+
+    mami "Ça fait cinq minutes que je t’attends..."
+
+    show adamuSorry2 at right
+
+    adamu "Euh je... en fait... il était une fois... vous voulez bien... c’est à dire que..."
+
+    hide adamuSmileSchool
+    show adamuAngry at right
+
+    adamu "{i}Putain j'aurais jamais dû tag une ranked ce matin !{/i}"
+
+    show mamiSmile at left
+
+    mami "** Sourit **"
+
+    mami "Bon c'est pas grave, on va manger ?"
+
+    show adamuSmileSchool at right
+
+    adamu "Yoshuu !"
+
+    scene black with dissolve
+
+    scene cafeteriaSchool with dissolve
+
+    show mamiAsking at left with dissolve
+
+    mami "Ton assiette est vachement équilibrée"
+
+    show adamuSorry at right with dissolve
+
+    adamu "Oui c’est normal je suis à la diète en ce moment, on m’a mit mal ahah..."
+
+    show mamiTaunt at left
+    
+    mami "C'est pour plaire que tu le fais hein"
+
+    show adamuSorry2 at right
+    hide adamuSorry
+
+    adamu "Vous voulez bien ?"
+
+    show mamiTaunt at left
+    
+    mami "J'en étais sûre ahah"
+    mami "Alors t'as des vues sur qui ? Tu vas tout me dire !"
+
+    show adamuSorry at right
+    hide adamuSorry2
+
+    adamu "Ahah pourquoi pas mais toi tu t'intéresse pas aux mecs ?"
+
+    show mamiStoic at left
+
+    mami "..."
+
+    show adamuSurprisedSchool at right
+
+    adamu "Mami-chan ?"
+
+    show mamiSpeaking at left
+
+    mami "C’est rien t’inquiètes, je viens juste de sortir d’une longue relation c’est un peu compliqué du coup..."
+
+    adamu "Ah excuse moi... je... euh..."
+
+    mami "Tu pouvais pas savoir t'inquiètes"
+
+    show mamiAnnoyed at left
+
+    mami "En tout cas moi les garçons c’est fini, j’ai l’impression que c’est toujours la même chose, j’ai l’impression de toujours tout faire mal, enfin, je sais pas…"
+
+    menu mami_good_girl:
+        "Dire à Mami que c'est une fille bien ?"
+        "Oui":
+            jump scene2_1
+        "Non":
+            jump scene2_2
+
+
+label scene2_1:
+    scene cafeteriaSchool
+    
+    show mamiBlush at left
+
+    show adamuSpeakingSerious at right
+
+    mami "Pourquoi tu dis ça ? Et puis en vrai je suis pas celle que tu penses..."
+
+    scene cafeteriaSchool with dissolve
+
+    show ayaSurprise
+
+    "{i}Aya venait d'arriver au réfectoire du CROUS, elle suprend au loin Adamu en train de déjeuner avec Mami. Adam croisa son regard et l'évita aussitôt{/i}"
+
+    scene cafeteriaSchool with dissolve
+
+    show mamiBlush at left
+
+    show adamuSorry at right
+
+    adamu "{i}Bordel de pute je suis cramé ! Aya voudra plus jamais me parler putain zebi…{/i}"
+
+    show mamiAsking at left
+
+    mami "Qu’est-ce qu’il y’a ?"
+
+    adamu "Ah non rien t’inquiètes pas, j’ai un peu mal au ventre je pense que c’était pas très frais ce qu’on a mangé ahah…"
+
+    mami "Ah bon tu trouves ? Moi j’ai trouvé ça plutôt bon."
+
+    adamu "D’ailleurs c’est quoi ton plat préféré ?"
+
+    scene cafeteriaSchool with dissolve
+
+    show adamuAngry with dissolve
+
+    adamu "{i}Il faut que je trouve une explication à donner à Aya tout à l’heure ! Réfléchis…{/i}"
+
+    scene cafeteriaSchool with dissolve
+
+    show mamiSpeaking at left with dissolve
+
+    mami "Tu m'écoutes Adamu ?"
+
+    show adamuSorry at right with dissolve
+
+    adamu "Ah oui désolé, j’ai la tête qui tourne un petit peu, ahah…"
+
+    mami "Bon en vrai on a fini de manger de toute façon, si tu veux on peut…"
+
+    show adamuSmileSchool at right
+
+    adamu "On peut ?"
+
+    show mamiBlush at left
+
+    mami "On peut aller se balader pour digérer un peu, enfin si tu veux..."
+
+    scene cafeteriaSchool with dissolve
+
+    show adamuVeryHappy with hpunch
+
+    adamu "{i}MA-SA-KA ! Ai-je bien entendu ce que j’ai entendu ?! On pensera à Aya plus tard pour le moment je pars en mission !{/i}"
+
+    scene cafeteriaSchool with dissolve
+
+    show adamuSorry at right with dissolve
+
+    show mamiBlush at left with dissolve
+
+    adamu "Ouais bien-sûr !"
+
+    show cafeteriaSchool with dissolve
+
+    scene black with dissolve
+
+    "{i}Mami et Adamu marchèrent le temps de la digestion{/i}"
+
+
+
+
+
+
+
+
+
+label scene2_2:
 
     return
