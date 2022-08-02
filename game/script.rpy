@@ -2,8 +2,9 @@
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-define adamu = Character("Adamu", color="#ce2806")
-define mami = Character("Mami", color="#ce06a4")
+define adamu = Character("Adamu", color="#7ed6df")
+define mami = Character("Mami", color="#f0932b")
+define aya = Character("Aya", color="#badc58")
 define noname = Character("???")
 
 define characterSize = .8
@@ -28,6 +29,9 @@ init:
     image adamuRoom:
         "background/env/adamu_room.png"
 
+    image jitenshaVisu:
+        "background/env/jitensha.png"
+
     image schoolPath1:
         "background/env/school_path1.jpg"
 
@@ -36,6 +40,9 @@ init:
 
     image corridorsSchool:
         "background/env/corridors_school.png"
+
+    image classroomSchool:
+        "background/env/classroom_td.png"
 
     image amphiSchool:
         "background/env/amphi_school.png"
@@ -53,6 +60,9 @@ init:
 
     image msgAdmissL2:
         "background/phone/admission_L2.png"
+
+    image msgClassMami:
+        "background/phone/classroom_mami.png"
 
 
     # Characters
@@ -141,11 +151,15 @@ init:
         "characters/aya/blushed2.png"
         zoom characterSize
 
+    image ayaCry:
+        "characters/aya/cry.png"
+        zoom characterSize
+
+
+    # Mami
     image mamiStoic:
         "characters/mami/stoic.png"
         zoom characterSize
-
-    # Mami
 
     image mamiAnnoyed:
         "characters/mami/annoyed.png"
@@ -614,7 +628,7 @@ label scene2:
 
     show mamiTaunt at left
     
-    mami "C'est pour plaire que tu le fais hein"
+    mami "C'est pour plaire aux filles que tu le fais hein..."
 
     show adamuSorry2 at right
     hide adamuSorry
@@ -736,16 +750,222 @@ label scene2_1:
 
     scene black with dissolve
 
-    "{i}Mami et Adamu marchèrent le temps de la digestion{/i}"
+    "{i}Mami et Adamu marchèrent le temps de la digestion...{/i}"
+
+    scene frontSchool with dissolve
+
+    show adamuConfident at right with dissolve
+
+    show mamiStoic at left with dissolve
+
+    mami "Bon il faut que j’y aille ! C’était plutôt cool ce midi"
+
+    adamu "Ouais clairement ! On se refera ça hein ?"
+
+    show mamiTaunt at left
+    hide mamiStoic
+
+    show adamuSorry at right
+    hide adamuConfident
+
+    mami "Si t'es sage peut-être"
+
+    show mamiStoic at left
+    hide mamiTaunt
+
+    mami "Bon allez à plus !"
+
+    scene frontSchool with dissolve
+
+    show adamuAngry with dissolve
+
+    adamu "{i}Qu’est-ce qu’elle voulait dire par être sage ?{/i}"
+    adamu "{i}J’ai toujours été sage moi, je suis abonné à la sagesse carrément et ça me rend fou !{/i}"
+
+    scene frontSchool with dissolve
+
+    "{i}La sonnerie retentit, les cours ayant repris Adam se précipita vers la classe.{/i}"
+
+    scene corridorsSchool with dissolve
+
+    "{i}Il arriva en retard de 4 minutes au cours d’informatique dont la séance était dédiée au projet...{/i}"
+
+    scene classroomSchool with dissolve
+
+    show adamuConfident at right with dissolve
+
+    adamu "Salut Aya !"
+
+    show ayaCalm at left with dissolve
+
+    aya "Ça va bien et toi ?"
+
+    adamu "Super nickel à la plonge !"
+
+    aya "..."
+
+    show ayaBlushed at left
+
+    aya "Tu mangeais avec quelqu'un ce midi ?"
+
+    scene classroomSchool with dissolve
+
+    show adamuAngry with dissolve
+
+    adamu "{i}C’est bon, le top-départ a été lancé, il faut à tout prix que je la wombo-combo avec des disquettes.{/i}"
+    adamu "{i}Je sais bien qu’elle ma surprit en flag’, c’est un piège mais elle ne m’aura pas comme ça !{/i}"
+    adamu "{i}Après tout je suis l’ultime Ninja ayant sauvé l’opération plan H par le passé… Ahah si elle savait...{/i}"
+
+    scene classroomSchool with dissolve
+
+    show adamuSorry at right with dissolve
+    show ayaBlushed at left with dissolve
+
+    adamu "J’ai mangé avec une amie, on avait jamais eu le temps vu qu’on a pas le même planning, et toi ?"
+
+    aya "Ah ouais c'est cool ça ! J’ai mangé avec des amies du lycée, à vrai dire je ne me suis pas vraiment fait d’amies à la fac..."
+
+    adamu "Ah ouais pourtant tout le monde voudrait devenir ami avec une fille aussi mignonne ahah"
+
+    show ayaBlushed2 at left
+
+    aya "Arrête de dire des bêtises..."
+
+    adamu "Ahah tu vois même quand je te dis la vérité tu me fais des reproches"
+
+    aya "Mais c’était pas un reproche c’est toi qui..."
+
+    scene classroomSchool with dissolve
+
+    "{i}À ce moment tout se passait bien, l’opération de sauvetage miraculeux eut été une réussite.{/i}"
+    "{i}Sans même mentir Adamu s’était tiré d’affaire. À vrai dire mentir provoque toujours des retombées.{/i}"
+
+    show ayaBlushed at left with dissolve
+    show adamuConfident at right with dissolve
+
+    adamu "Et puis tu sais pas ce qu’il s’est passé à ce moment là..."
+
+    scene msgClassMami with dissolve
+
+    "{i}*Téléphone vibre*{/i}" with hpunch
+
+    scene classroomSchool with dissolve
+
+    show adamuAngry with dissolve
+
+    adamu "{i}Bordel de pute pourquoi pourquoiiiiii !{/i}" with hpunch
+    adamu "{i}Oh bordel je suis refait elle veut me voir, mais attends zebi y’a Aya juste devant moi qu’est-ce qui se passe !{/i}"
+    adamu "{i}Je suis vraiment condamné, l’univers entier veut me voir échouer !{/i}"
+
+    scene classroomSchool with dissolve
+
+    show adamuSorry at right with dissolve
+    show ayaCalm at left with dissolve
+
+    aya "C’est ton amie de tout à l’heure ?"
+
+    menu lie_aya:
+        "Réponse:"
+        "Euh ouais c’est elle qui veut me voir hein moi j’ai rien demandé et puis...":
+            jump scene2_1_1
+        "Non du tout ! C'est un ami qui m'a envoyé un drôle de message, t'es parano un peu ahah...":
+            jump scene2_1_2
+        
 
 
 
 
 
+label scene2_1_1:
 
+    scene classroomSchool
+    show ayaHurt at left
+    show adamuSorry at right
+    
+    aya "T’as pas à te justifier Adamu hein ? On est qu’ami tous les deux..."
+    
+    show adamuSorry2 at right
+    hide adamuSorry2
 
+    adamu "Ouais je sais mais c’est que..."
+    adamu "{i}On m'a mit mal, je veux mourir.{/i}"
 
+    show ayaCalm at left
+    aya "Du coup pour le projet, je pense qu’il faudrait surtout utiliser cette libraire en python et..."
 
-label scene2_2:
+    scene classroomSchool with dissolve
+
+    "{i}Finalement pendant toute l’heure restante ils n’auront discuté que du projet. Adamu est en train mauvaise posture. Mais ce qu’il s’apprêtait à voir en sortant de la salle était terrible...{/i}"
+
+    show adamuSorry at right with dissolve
+    show ayaCalm at left with dissolve
+
+    adamu "D’ailleurs Aya est-ce que..."
+
+    show ayaBlushed at left
+
+    aya "Bon bah salut Adamu à la semaine prochaine !"
+
+    show adamuSurprisedSchool at right
+
+    adamu "Attends Aya !"
+
+    aya "..."
+
+    show ayaCry at left
+
+    aya "Salut..."
+
+    scene classroomSchool with dissolve
+
+    "{i}Aya était en larme, elle parti en courant.{w} Toute la salle était abasourdie face à la scène, des murmures se faisaient entendre, rien de bon pour la réputation de notre Majin Boo national{/i}"
+
+    scene black with dissolve
+
+    "{i}Adamu, de retour chez lui. 23h34.{/i}"
+
+    scene adamuRoom with dissolve
+
+    show adamuChill with dissolve
+
+    adamu "Bordel qu’est-ce qui se passe dans ma vie... Qu’est-ce que je fais pour Mami..."
+
+    adamu "En plus elle veut qu'on se voit au parc, c'est pas à côté..."
+
+    adamu "Arrrrgh ça sert à rien de réfléchir, je fais quoi du coup..."
+
+    menu see_mami:
+        "Que faire ?"
+        "Voir Mami":
+            jump scene2_1_1_1
+        "Rester à la case pépouze la main dans le falzar":
+            jump scene2_1_1_2
+        
+
+label scene2_1_1_1:
+    scene adamuRoom
+    show adamuChill
+    adamu 'Bon let’s go on pensera à Aya plus tard, pour le moment je repars en mission.'
+
+    show adamuChillJoy
+    adamu "J’y serais jamais à temps à pied... {w} je dois aller chercher l’arme ancestrale qui a permis au rat originel de s’évader des égouts..."
+
+    scene jitenshaVisu with dissolve
+
+    adamu "Le légendaire « Jitensha à Drancy »."
+
+    scene black with dissolve
 
     return
+
+label scene2_1_1_2:
+    scene adamuRoom
+    show adamuChill
+
+    adamu "Bon en vrai la flemme de la voir, c'est trop pour moi aujourd'hui... {w} Je vais tag une petite game et ensuite dodo."
+    
+    scene black with dissolve
+    "{i}Fin de journée pour Adamu{i}"
+
+    return
+
