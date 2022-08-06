@@ -9,6 +9,8 @@ define noname = Character("???")
 
 define characterSize = .8
 
+default scoreMami = 0
+
 init python:
 
     config.underlay.append(
@@ -153,6 +155,14 @@ init:
 
     image ayaCry:
         "characters/aya/cry.png"
+        zoom characterSize
+    
+    image ayaCuteAngry:
+        "characters/aya/cute_angry.png"
+        zoom characterSize
+
+    image ayaLaugh:
+        "characters/aya/laugh.png"
         zoom characterSize
 
 
@@ -871,7 +881,64 @@ label scene2_1:
         "Non du tout ! C'est un ami qui m'a envoyé un drôle de message, t'es parano un peu ahah...":
             jump scene2_1_2
         
+label scene2_2:
+    adamu "Ouais je comprends ahah..."
 
+    mami "C'est la vie hein..."
+
+    menu:
+        "Répondre à Mami-chan:"
+        "En tout cas si t'as un problème tu peux m'appeler n'hésite pas":
+            scene cafeteriaSchool
+            show adamuConfident at right
+            show mamiBlush at left
+            $ scoreMami += 5
+            mami "Hum... vraiment ?"
+            show adamuSmileSchool at right
+            adamu "Mais ouais bien sûr !"
+            show mamiTaunt at left
+            mami "Bon bah t'as pas intérêt à revenir là dessus alors !"
+            adamu "Je ne reviens jamais sur ma parole, tel est mon Nindô."
+            show mamiStoic at left
+            mami "Cringe ?"
+            show adamuSorry at right
+            adamu "Vous voulez bien ?"
+            scene corridorsSchool with dissolve
+            show adamuSpeakingSerious with dissolve
+            adamu "Allez c'est reparti pour les cours, en plus jusqu'à 18h00 aujourd'hui..."
+            show adamuAngry
+            adamu "Quelle vie de merde..."
+            scene msgClassMami with dissolve
+            "{i}* Téléphone vibre * {/i}" with hpunch
+            scene corridorsSchool with dissolve
+            show adamuVeryHappy with dissolve
+            adamu "NANIIIIIIIII ! MAIS QU'EST-CE QUE TU CACHES DERRIÈRE CE SOURIRE ADAMU !" with hpunch
+            show adamuConfident
+            adamu "Ça s'annonce bien pour moi, je réponderai plus tard à son message."
+            show adamuStun
+            adamu "Mais en vrai y'a aussi Aya, qu'est-ce que je dois faire ?"
+            show adamuAngry
+            adamu "Bon en vrai on verra ce soir, là je dois aller en cours."
+            jump scene2_mami_dm
+        "...":
+            scene cafeteriaSchool
+            "{i}Le déjeuner se passa sans accrocs. {/i}"
+            scene frontSchool with dissolve
+            show adamuConfident at right with dissolve
+            show mamiStoic at left with dissolve
+            mami "Bon il faut que j’y aille ! C’était plutôt cool ce midi"
+            adamu "Ouais clairement ! On se refera ça hein ?"
+            show adamuSorry at right
+            hide adamuConfident
+            mami "Euh ouais pourquoi pas..."
+            mami "Bon allez à plus !"
+            scene black with dissolve
+            "{i}La journée se termina pour Adamu. Les jours passèrent sans nouvelles de Mami...{/i}"
+            return
+            # Jump scene5
+            
+
+            
 
 
 
@@ -920,6 +987,57 @@ label scene2_1_1:
 
     "{i}Aya était en larme, elle parti en courant.{w} Toute la salle était abasourdie face à la scène, des murmures se faisaient entendre, rien de bon pour la réputation de notre Majin Boo national{/i}"
 
+    jump scene2_mami_dm
+
+label scene2_1_2:
+    scene classroomSchool
+    show adamuSorry at right
+    show ayaBlushed at left
+    aya "Ah d'accord désolée je ne voulais pas rentrer dans tes affaires, c'est juste que..."
+    show adamuConfident at right
+    adamu "Que ?"
+    show ayaBlushed2 at left
+    aya "C'est juste que je vous trouvais vachement proches, mais si tu me dis que vous êtes amis..."
+    show adamuSmileSchool at right
+    adamu "Est-ce que tu ne me ferais pas une petite crise de jalousie là hein ?"
+    show ayaCuteAngry at left
+    aya "Non du tout tu dis n'importe quoi, comme d'habitude..."
+    scene classroomSchool with dissolve
+    "{i}Et leur petite scène de ménage continua. Ils étaient tellement mignons que beaucoup dans la salle pensaient à la formation même d'un couple à cet instant.{/i}"
+    show adamuConfident at right with dissolve
+    show ayaLaugh at left with dissolve
+    adamu "Et c'est comme ça que ma mère m'a suprise sur Twitter en train de dire que j'allais niquer des daronnes !"
+    aya "Ahah qu'est-ce que t'es bête Adamu."
+    scene classroomSchool with dissolve
+    show adamuStun with dissolve
+    adamu "{i}Bon il faut que je me lance, c'est mon moment.{/i}"
+    show adamuVeryHappy
+    adamu "ALLEZ JE VAIS LUI PROPOSER UN DATE !" with hpunch
+    scene classroomSchool with dissolve
+    show adamuConfident at right with dissolve
+    show ayaLaugh at left with dissolve
+    aya "Et puis c'est là que je suis allé la première fois au karaoké de la ville, j'y étais jamais allée et c'est trop bien !"
+    show adamuSmileSchool at right
+    adamu "D'ailleurs Aya, ça te dirait de sortir en ville ce week-end, tu pourras me montrer tes talents de chanteuse au karaoké par exemple !"
+    show ayaBlushed at left
+    aya "..."
+    show ayaBlushed2 at left
+    aya "Oui pourquoi pas c'est vrai que ce serait cool !"
+    scene classroomSchool with dissolve
+    show adamuVeryHappy with dissolve
+    adamu "LET'S GO ! BORDEL DE MERDE ! OUAIS POURQUOI PAS POURQUOI PAAAAAAAAAAAAS !!!" with hpunch
+    hide adamuVeryHappy with dissolve
+    "{i}À moment précis, Adamu commenceait à monter les saintes marches de la légende du P.A.L.M.{/i}"
+    "{i}Un moment historique dans sa longue vie d'ermite croupissant dans les débris de sa chambre morose.{/i}"
+    "{i}Il venait d'obtenir le premier date de toute sa vie. Plus rien ne sera comme avant. {/i}"
+    "{i}Nom de code de l'opération: PLAN D(ate){/i}"
+    scene black with dissolve
+    "{i}Les jours passèrent. {w} Le jour saint du date arriva.{w} Samedi 10 septembre. 11h33, Chature-Re-Haru.{/i}"
+    return;
+
+
+        
+label scene2_mami_dm:
     scene black with dissolve
 
     "{i}Adamu, de retour chez lui. 23h34.{/i}"
@@ -940,7 +1058,6 @@ label scene2_1_1:
             jump scene2_1_1_1
         "Rester à la case pépouze la main dans le falzar":
             jump scene2_1_1_2
-        
 
 label scene2_1_1_1:
     scene adamuRoom
@@ -958,6 +1075,7 @@ label scene2_1_1_1:
 
     return
 
+
 label scene2_1_1_2:
     scene adamuRoom
     show adamuChill
@@ -967,5 +1085,6 @@ label scene2_1_1_2:
     scene black with dissolve
     "{i}Fin de journée pour Adamu{i}"
 
+    # Jump scene 5
     return
 
