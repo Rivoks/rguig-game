@@ -170,7 +170,10 @@ init:
 
 # The game starts here.
 
+
+
 label start:
+    jump scene1
 
     scene adamuRoom
 
@@ -551,6 +554,8 @@ label start:
     "{i}La vraie rentrée se faisant dans une semaine, les jours passèrent sans trop de bruits."
     "{i} TO BE CONTINUED..."
 
+    stop music
+
     jump scene1
 
 
@@ -583,7 +588,6 @@ label start:
         show adamuAngry
 
         adamu "Aucun gros tarpé de lopessa à l'horizon."
-        adamu "¯\_(ツ)_/¯"
 
         adamu "J'avais l'espoir d'être dans la même classe que Mami"
         adamu "Mes espoirs sont brisés."
@@ -695,15 +699,201 @@ label start:
         "{i}Evidemment notre ventre-en-coeur ne l’entendit pas de cette oreille."
         "{i}Les dieux étaient avec lui, il savait que cette demande n'était pas anodine."
 
-        show streetEve with dissolve
-        play music "audio/ost/hero.mp3" volume 0.1  fadein 1.0
+        $RelationAya = 0
+        $proposeDate = False
 
-        "{i}Sur le chemin du retour, Adamu remercia les cieux de la bonne fortune qui l’avait touché."
-        "{i}Il ne pouvait attendre de rentrer chez lui et envoya le premier message à Aya et discutait de temps en temps avec Mami."
-        "{i}Il se dit qu’il était enfin sur la voie légendaire de Maru Aruba, samouraï du passé et symbole de virilité pour notre héros."
-        "{i}Ainsi se termina la rentrée de notre jeunot, il pouvait se reposer il l'avait bien mérité."
 
-        stop music
+        menu:
+            "Est-ce le bon moment pour proposer un date à Aya ?"
+            "Oui":
+                $proposeDate = True
+                $scoreAya += 10
+                scene corridorsSchool
+                show ayaCalm at right
+                show adamuSmileSchool at left
+                adamu "Aya, t'es libre demain après-midi ?"
+                show ayaSurprise at right
+                aya "Oui je n'ai rien de prévu, pourquoi ?"
+                adamu "Parfait, demain est une belle journée. Autant en profiter."
+                adamu "Ca te dirait de se promener ensemble dans le quartier ? Je connais un coin sympa."
+                hide ayaSurprise
+                aya "C'est une bonne idée, on se voit demain alors"
+                adamu "Ca marche, rentre bien."
+                aya "Toi aussi, salut !"
 
+                stop music
+
+
+                show streetEve with dissolve
+                play music "audio/ost/hero.mp3" volume 0.1  fadein 1.0
+
+                "{i}Sur le chemin du retour, Adamu remercia les cieux de la bonne fortune qui l’avait touché."
+                "{i}Enfin, il commencait à arpenter la voie légendaire de Maru Arufa, samouraï du passé et symbole de virilité pour notre héros."
+                "{i}Ainsi se termina la rentrée de notre jeunot, il pouvait se reposer il l'avait bien mérité."
+
+                stop music
+
+                #jump to scene3 (date)
+
+            "Non":
+                show adamuConfident at left
+                adamu "Dis Aya, t'es dis..."
+                show ayaCalm at right
+                aya "?"
+                show adamuSorry at left
+                adamu "Hum, non rien..."
+                adamu "{i}Putain j'ai encore foiré."
+                aya "Bon, je vais y aller. Rentre bien Adam !"
+                show adamuSmileSchool
+                adamu "Ca marche Aya, passe un bon week-end, à lundi !"
+
+                stop music
+
+                scene black with dissolve
+                "{i}Chambre d'Adam, 19h07"
+
+                scene adamu_room with dissolve
+
+                play music "audio/ost/violet_sky.mp3" volume 0.1 loop fadein 1.0
+
+                show adamuChill with dissolve
+                adamu "Je suis enfin rentré, je suis crevé..."
+                adamu "La journée s'est bien passée dans l'ensemble, je suis sur la bonne voie."
+                adamu "J'aurais dû demander à Aya pour demain."
+                adamu "Tant pis, j'aurais d'autres occasions..."
+                adamu "Allez, une petite branlette et au lit."
+                adamu "Non je déconne, c'est fini ces conneries."
+
+                play sound "audio/fx/notification.mp3" volume 0.2
+
+                "{i}*Vous avez reçu un nouveau message de Mami*{/i}"
+
+                show adamuSurprise
+                adamu "Hein ? Mami ?"
+                adamu "Elle me propose de manger ensemble au CROUS lundi à midi !"
+                adamu "Mais je m'entends bien avec Aya maintenant..."
+
+                $scoreMami = 0
+
+                menu:
+                    adamu "Que faire ?"
+                    "Accepter de manger avec Mami":
+                        $scoreMami += 3
+                        show adamuChillJoy
+                        adamu "Je ne laisserai pas passer ma chance cette fois-ci"
+                        adamu "Un tête à tête avec une Basic White Bitch, le pied !"
+                        adamu "J'ai hâte d'être lundi"
+
+
+
+                        #jump to scene 2 (CROUS w/ Mami)
+
+                    "Refuser et prétexter une excuse":
+                        $scoreMami -= 5
+                        show adamuSleeping
+                        adamu "Je dois rester fort."
+                        adamu "Même si j'en ai terriblement envie, maintenant que je me suis rapproché d'Aya je ne peux pas accepter."
+                        adamu "Je suis conscient de mes défauts."
+                        adamu "Je suis un mauvais menteur, ça finira par se savoir tôt ou tard..."
+                        adamu "Ne prenons pas de risques inutiles."
+
+                        play sound "audio/fx/notification.mp3" volume 0.2
+                        "{i}*Aya vous a envoyé un message !*"
+
+                        hide adamuSleeping
+                        show adamuSurprise
+                        adamu "Un message d'Aya ! Je ne m'y attendais pas"
+                        adamu "Elle me remercie pour la journée. Elle a dit que c'est la première fois qu'elle se sent aussi à l'aise avec un garçon !"
+
+                        menu:
+                            "{i}Dois-je répondre à Aya maintenant ?"
+
+                            "Oui, tout de suite !":
+                                show adamuChillJoy
+                                adamu "Voilà, c'est fait !"
+                                $scoreAya += 7
+                                adamu "Bon là, je dois rectifier le tir."
+
+                                menu:
+                                    "{i} Proposer un date à Aya ?"
+
+                                    "Oui, je n'ai rien à perdre !":
+                                        $scoreAya += 7
+                                        adamu "Elle a dit que c'était la première fois qu'elle se sentait aussi à l'aise avec un garçon"
+                                        adamu "C'est un appel de phare, ne pas prendre les devants serait du int !"
+                                        adamu "Tac tac tac, tac tac tac !"
+                                        adamu "C'est envoyé ! C'est qui le gros baiseur ?"
+                                        adamu "Bah je crois bien que c'est bibi !"
+
+                                        #jump to scene 3
+
+
+                                    "Non, c'est encore trop tôt !":
+                                        show adamuChill
+                                        adamu "Mieux vaut ne pas se presser avec les filles timides"
+                                        show adamuChillJoy
+                                        adamu "J'ai fait le bon choix, c'est sûr !"
+
+                                        #jump to scene 5
+
+                            "Non, attendre un peu. " :
+                                show adamuChill
+                                adamu "D'apres les estimations, il faut attendre au moins 2h avant de répondre pour montrer qu'on est occupé et suciter l'envie."
+                                show adamuChillJoy
+                                adamu "Je vais me lancer un petit Star Wars et je lui répondrai après."
+                                adamu "Ikuzo !"
+
+                                play music "audio/ost/star_wars_op.mp3" volume 0.1 fadein 1.0
+                                "{i}*Regarde un épisode d'Obi-Wan Kenobi*"
+                                show adamuChillJoy
+                                adamu "Tin tin tin !"
+                                hide adamuChillJoy
+                                show adamuSurprise
+                                adamu "Waaaah"
+                                hide adamuSurprise
+                                show adamuChillJoy
+                                adamu "Ololo c'est trop !"
+                                hide adamuChillJoy
+                                show adamuChill
+                                adamu "..."
+                                hide adamuChill
+                                show adamuChillJoy
+                                adamu "Let's go !"
+                                hide adamuChillJoy
+                                show adamuChill
+                                adamu "..."
+                                hide adamuChill
+                                show adamuSleeping
+                                adamu "..."
+                                hide adamuSleeping
+                                show adamuSurprise
+                                adamu "Waah, j'ai eu peur, la pute !"
+                                hide adamuSurprise
+                                show adamuChill
+                                adamu "..."
+                                hide adamuChill
+                                show adamuSleeping
+                                adamu "..."
+                                hide adamuSleeping
+
+                                scene black with dissolve
+
+                                stop music
+
+                                show adamuSleeping with dissolve
+                                adamu "Aya..."
+                                hide adamuSleeping
+                                show adamuSurprise
+                                adamu "Merde je me suis assoupi. Il est quelle heure ?"
+                                adamu "Quoi ?!"
+                                adamu "C'est déjà le matin ! J'ai pas répondu au message d'Aya et je l'ai laissée en vu !"
+                                $RelationAya -= 5
+
+                                scene black with dissolve
+
+
+                                stop music
+
+                                #jump to scene 5
 
     return

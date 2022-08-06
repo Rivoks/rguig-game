@@ -1,22 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 617, in script
-    aya "Aya Kataragi."
-Exception: Sayer 'aya' is not defined.
+  File "game/script.rpy", line 874, in script
+    show adamuSleeping "Owari da."
+Exception: Image 'adamuSleeping' does not accept attributes '"Owari da."'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 617, in script
-    aya "Aya Kataragi."
-  File "renpy/ast.py", line 681, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "renpy/ast.py", line 574, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'aya' is not defined.
+  File "game/script.rpy", line 874, in script
+    show adamuSleeping "Owari da."
+  File "renpy/ast.py", line 1197, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "renpy/ast.py", line 1167, in show_imspec
+    atl=atl)
+  File "renpy/exports.py", line 742, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "renpy/display/image.py", line 409, in find_target
+    self.target = target._duplicate(a)
+  File "renpy/display/transform.py", line 865, in _duplicate
+    args.extraneous()
+  File "renpy/display/core.py", line 271, in extraneous
+    " ".join(self.args),
+Exception: Image 'adamuSleeping' does not accept attributes '"Owari da."'.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 RGUIG GAME 1.0
-Mon Jun 27 16:39:40 2022
+Sat Aug  6 17:30:03 2022
