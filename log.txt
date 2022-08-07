@@ -1,4 +1,4 @@
-Sat Aug  6 21:46:39 2022
+Mon Aug  8 00:31:37 2022
 Darwin-21.1.0-x86_64-i386-64bit
 Ren'Py 7.4.11.2266
  
@@ -7,12 +7,364 @@ Bootstrap to the start of init.init took 0.08s
 Early init took 0.00s
 Loader init took 0.01s
 Loading error handling took 0.02s
-Loading script took 0.24s
+Loading script took 0.34s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.03s
+Running init code took 0.04s
 Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.31s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 1078, in script
+    adamu "ALLEZ JE VAIS LUI PROPOSER UN DATE !" with hpunch
+  File "/Applications/Renpy/renpy/ast.py", line 721, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/Applications/Renpy/renpy/exports.py", line 1419, in say
+    who(what, *args, **kwargs)
+  File "/Applications/Renpy/renpy/character.py", line 1249, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "/Applications/Renpy/renpy/character.py", line 901, in do_display
+    **display_args)
+  File "/Applications/Renpy/renpy/character.py", line 647, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/Applications/Renpy/renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Applications/Renpy/renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "/Applications/Renpy/renpy/display/core.py", line 4025, in interact_core
+    renpy.audio.audio.periodic()
+  File "/Applications/Renpy/renpy/audio/audio.py", line 1162, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "/Applications/Renpy/renpy/audio/audio.py", line 1140, in periodic_thread_main
+    periodic_pass()
+  File "/Applications/Renpy/renpy/audio/audio.py", line 1082, in periodic_pass
+    c.periodic()
+  File "/Applications/Renpy/renpy/audio/audio.py", line 518, in periodic
+    topf = load(filename)
+  File "/Applications/Renpy/renpy/audio/audio.py", line 69, in load
+    rv = renpy.loader.load(fn)
+  File "/Applications/Renpy/renpy/loader.py", line 798, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'audio/ost/love_dramatic'.
+
+While running game code:
+  File "game/script.rpy", line 1078, in script
+    adamu "ALLEZ JE VAIS LUI PROPOSER UN DATE !" with hpunch
+IOError: Couldn't find file 'audio/ost/love_dramatic'.
+
+Full traceback:
+  File "game/script.rpy", line 1078, in script
+    adamu "ALLEZ JE VAIS LUI PROPOSER UN DATE !" with hpunch
+  File "/Applications/Renpy/renpy/ast.py", line 721, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/Applications/Renpy/renpy/exports.py", line 1419, in say
+    who(what, *args, **kwargs)
+  File "/Applications/Renpy/renpy/character.py", line 1249, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "/Applications/Renpy/renpy/character.py", line 901, in do_display
+    **display_args)
+  File "/Applications/Renpy/renpy/character.py", line 647, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/Applications/Renpy/renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Applications/Renpy/renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "/Applications/Renpy/renpy/display/core.py", line 4025, in interact_core
+    renpy.audio.audio.periodic()
+  File "/Applications/Renpy/renpy/audio/audio.py", line 1162, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "/Applications/Renpy/renpy/audio/audio.py", line 1140, in periodic_thread_main
+    periodic_pass()
+  File "/Applications/Renpy/renpy/audio/audio.py", line 1082, in periodic_pass
+    c.periodic()
+  File "/Applications/Renpy/renpy/audio/audio.py", line 518, in periodic
+    topf = load(filename)
+  File "/Applications/Renpy/renpy/audio/audio.py", line 69, in load
+    rv = renpy.loader.load(fn)
+  File "/Applications/Renpy/renpy/loader.py", line 798, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'audio/ost/love_dramatic'.
+
+While running game code:
+  File "game/script.rpy", line 1078, in script
+    adamu "ALLEZ JE VAIS LUI PROPOSER UN DATE !" with hpunch
+IOError: Couldn't find file 'audio/ost/love_dramatic'.
+
+Full traceback:
+  File "game/script.rpy", line 1078, in script
+    adamu "ALLEZ JE VAIS LUI PROPOSER UN DATE !" with hpunch
+  File "/Applications/Renpy/renpy/ast.py", line 721, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/Applications/Renpy/renpy/exports.py", line 1419, in say
+    who(what, *args, **kwargs)
+  File "/Applications/Renpy/renpy/character.py", line 1249, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "/Applications/Renpy/renpy/character.py", line 901, in do_display
+    **display_args)
+  File "/Applications/Renpy/renpy/character.py", line 647, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/Applications/Renpy/renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Applications/Renpy/renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "/Applications/Renpy/renpy/display/core.py", line 4025, in interact_core
+    renpy.audio.audio.periodic()
+  File "/Applications/Renpy/renpy/audio/audio.py", line 1162, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "/Applications/Renpy/renpy/audio/audio.py", line 1140, in periodic_thread_main
+    periodic_pass()
+  File "/Applications/Renpy/renpy/audio/audio.py", line 1082, in periodic_pass
+    c.periodic()
+  File "/Applications/Renpy/renpy/audio/audio.py", line 518, in periodic
+    topf = load(filename)
+  File "/Applications/Renpy/renpy/audio/audio.py", line 69, in load
+    rv = renpy.loader.load(fn)
+  File "/Applications/Renpy/renpy/loader.py", line 798, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'audio/ost/love_dramatic'.
+
+While running game code:
+  File "game/script.rpy", line 1078, in script
+    adamu "ALLEZ JE VAIS LUI PROPOSER UN DATE !" with hpunch
+IOError: Couldn't find file 'audio/ost/love_dramatic'.
+Resetting cache.
+Bootstrap to the start of init.init took 40.47s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.28s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 86.17s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.22s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 1103, in script
+    return;
+  File "/Applications/Renpy/renpy/ast.py", line 1553, in execute
+    renpy.store._return = renpy.python.py_eval(self.expression)
+  File "/Applications/Renpy/renpy/python.py", line 2274, in py_eval
+    code = py_compile(code, 'eval')
+  File "/Applications/Renpy/renpy/python.py", line 835, in py_compile
+    raise e
+SyntaxError: unexpected EOF while parsing (script.rpy, line 1103)
+
+While running game code:
+  File "game/script.rpy", line 1103, in script
+    return;
+SyntaxError: unexpected EOF while parsing (script.rpy, line 1103)
+Resetting cache.
+Bootstrap to the start of init.init took 142.81s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Bootstrap to the start of init.init took 316.61s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.19s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.17s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 400.72s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
@@ -30,10 +382,10 @@ Analyze screens took 0.01s
 Save screen analysis took 0.02s
 Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
+Save bytecode. took 0.01s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.60s
+Interface start took 0.31s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1728, 1117)
@@ -44,6 +396,871 @@ Renderer: 'Apple M1 Pro'
 Version: '2.1 Metal - 76.1'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Bootstrap to the start of init.init took 507.16s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.20s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.24s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 521.04s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.20s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 575.73s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.28s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 776.81s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.21s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.21s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 796.94s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.31s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Bootstrap to the start of init.init took 912.16s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.19s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.23s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1459.10s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1469.29s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.22s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1553.24s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.29s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Bootstrap to the start of init.init took 1717.27s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.18s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.18s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Bootstrap to the start of init.init took 1881.06s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.19s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.27s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1896.54s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.27s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1907.59s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.21s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1924.81s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.19s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1934.26s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1609, 905) drawable=(3218, 1810)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1609, 935) drawable=(3218, 1870)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1563, 801) drawable=(3126, 1602)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1612, 892) drawable=(3224, 1784)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1628, 890) drawable=(3256, 1780)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1607, 890) drawable=(3214, 1780)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1594, 890) drawable=(3188, 1780)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1586, 888) drawable=(3172, 1776)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1574, 886) drawable=(3148, 1772)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1970.97s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.27s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1574, 885) drawable=(3148, 1770)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2036.36s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.30s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1573, 885) drawable=(3146, 1770)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2069.98s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.18s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.24s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1573, 885) drawable=(3146, 1770)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2108.11s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/yazid/Library/RenPy/backups/RGUIG GAME':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.14s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1728, 1117)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 76.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1573, 885) drawable=(3146, 1770)
 Maximum texture size: 4096x4096
 Cleaning stores took 0.00s
 Init translation took 0.00s

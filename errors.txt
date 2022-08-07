@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 887: expected statement.
-    scoreMami += 5
-              ^
+File "game/script.rpy", line 718: play requires a channel
+    play "audio/ost/excited.mp3" volume 0.3 loop fadein 1.0
+         ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sat Aug  6 20:53:50 2022
+Mon Aug  8 00:08:57 2022
