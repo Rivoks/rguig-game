@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 1496: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Supplément boursin ?"
+                          ^
+
+Ren'Py Version: Ren'Py 7.4.11.2266
+Sun Aug 14 22:26:25 2022
