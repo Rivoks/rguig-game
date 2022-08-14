@@ -769,6 +769,11 @@ label scene1:
         "{i}Il se dit qu’il était enfin sur la voie légendaire de Maru Aruba, samouraï du passé et symbole de virilité pour notre héros."
         "{i}Ainsi se termina la rentrée de notre jeunot, il pouvait se reposer il l'avait bien mérité."
 
+        scene black with dissolve
+
+        "{i}Un jour Adamu proposa à Mami de déjeuner ensemble. Par chance cette dernière accepta la proposition{/i}"
+        "{i}Ils se donnèrent rendez-vous le lendemain devant l'université. Que le sort puisse lui être favorable.{/i}"
+
         stop music
 
 
