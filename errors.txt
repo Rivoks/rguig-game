@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 850: expected 'image_name_component' not found.
-    show scene black with dissolve
+File "game/script.rpy", line 1196: expected 'image_name_component' not found.
+    show
         ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Fri Aug  5 12:18:16 2022
+Mon Aug 15 16:54:20 2022
