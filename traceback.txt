@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 1588, in script
-    adamu "{i}MERCI À TOUS CEUX QUI ONT TOUJOURS CRU EN MOI !!!{/i}"
-IOError: Couldn't find file 'audio/fx/bordel.mp3'.
+  File "game/scene1.rpy", line 273, in script
+    "{i}*Regarde un épisode d'Obi-Wan Kenobi*"
+IOError: Couldn't find file 'audio/ost/star_wars_op.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 1588, in script
-    adamu "{i}MERCI À TOUS CEUX QUI ONT TOUJOURS CRU EN MOI !!!{/i}"
+  File "game/scene1.rpy", line 273, in script
+    "{i}*Regarde un épisode d'Obi-Wan Kenobi*"
   File "/Applications/Renpy/renpy/ast.py", line 721, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "/Applications/Renpy/renpy/exports.py", line 1419, in say
@@ -38,9 +38,9 @@ Full traceback:
     rv = renpy.loader.load(fn)
   File "/Applications/Renpy/renpy/loader.py", line 798, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'audio/fx/bordel.mp3'.
+IOError: Couldn't find file 'audio/ost/star_wars_op.mp3'.
 
 Darwin-21.1.0-x86_64-i386-64bit
 Ren'Py 7.4.11.2266
 RGUIG GAME 1.0
-Mon Aug 15 00:00:00 2022
+Mon Aug 15 18:37:50 2022
