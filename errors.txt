@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1196: expected 'image_name_component' not found.
-    show
-        ^
+The label scene3 is defined twice, at File "game/scene3.rpy", line 1:
+    label scene3:
+and File "game/script.rpy", line 922:
+    label scene3:
+
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Mon Aug 15 16:54:20 2022
+Mon Aug 15 19:15:04 2022

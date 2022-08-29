@@ -244,6 +244,7 @@
         menu:
             adamu "En fait je voulais te dire..."
             "Tu me plais et j'ai envie d'apprendre à te connaître davantage.":
+                $proposeAya = True
                 hide ayaSurprise
                 show ayaBlushed2 at right
                 hide adamuStun
@@ -257,7 +258,34 @@
                 hide ayaBlushed2
                 show ayaBlushed at right
                 aya "Merci Adam, ça me touche beaucoup..."
-                aya "Moi aussi j'aimerais approfondir notre relation !"
+                aya "Moi aussi tu me plais..."
+                hide adamuSpeakingSerious
+                show adamuSurprisedSchool at left
+                aya "Je ne savais pas comment te le dire alors j'ai pensé que ce rendez-vous était une bonne idée."
+                hide adamuSurprisedSchool
+                show adamuSpeakingSerious at left
+                adamu "Aya-chan..."
+                hide ayaBlushed
+                show ayaSurprise at right
+                adamu "Je veux sortir avec toi !"
+                hide ayaSurprise
+                show ayaBlushed at right
+                hide adamuSpeakingSerious
+                show adamuSorry at left
+                adamu "Dès notre rencontre, je l'ai toujours voulu."
+                hide ayaBlushed
+                show ayaBlushed2 at right
+                adamu "Je n'ai cessé de penser à toi nuits et jours..."
+                hide adamuSorry
+                show adamuSmileSchool at left
+                adamu "Mais ce jour est enfin arrivé, alors voilà..."
+                adamu "Je t'aime Aya !"
+                aya "..."
+                hide ayaBlushed2
+                show ayaCalm at right
+                aya "Je t'aime aussi Adamu..."
+                aya "Profitons de ce concert en tant que couple maintenant."
+
             "Ah zut j'ai oublié ce que je voulais dire...":
                 hide adamuStun
                 show adamuSorry at left
@@ -268,69 +296,71 @@
                 aya "Ca ne devait pas être important alors."
                 adamu "Sûrement, oui."
 
+                scene black with dissolve
+                "Aie ! Adamu venait de laisser passer une occasion en or et il s'en était rendu compte."
+                "Il resta silencieux pendant toute la fin du concert."
+                "Aya et lui s'enchangèrent quelques regards mais rien de plus."
+                "Eh oui, qu'il est con ! Aya attendait la déclaration de notre jeune riche, elle était déçue mais essaya de sauver les apparences."
+                "Adamu ne pouvait plus supporter la réalité en face. Cette réalité où il ne sera jamais avec une hlel."
+                "Pris de honte, il s'éclipsa discrètement et resta assis dehors sur un banc jusqu'à la fin du concert."
+                "Evidemment, remarquant qu'Adamu avait disparu, Aya le chercha, tenta de l'appeler mais rien à faire, Adamu ne répondit pas."
+                "Quel gâchis !"
+
+                stop music fadeout 0.5
+
+                #jump to scene5
+                return
 
         stop music fadeout 0.5
 
-        scene black with dissolve
+        if proposeAya == True:
+            scene black with dissolve
 
-        "{i}Plus tard dans la nuit, une fois le concert fini."
+            "{i}Plus tard dans la nuit, une fois le concert fini."
 
-        show ebisuStreetNight with dissolve
+            show ebisuStreetNight with dissolve
 
-        play music "audio/ost/bye_feelings.mp3" volume 0.1 loop
+            play music "audio/ost/bye_feelings.mp3" volume 0.1 loop
 
-        show adamuSmileSchool at left with dissolve
-        show ayaCalm at right with dissolve
+            show adamuSmileSchool at left with dissolve
+            show ayaCalm at right with dissolve
 
-        adamu "C'était vraiment cool aujourd'hui, je me suis bien amusé !"
-        aya "Oui, moi aussi ! Merci Adam c'est grâce à toi."
-        aya "Alors, c'est l'heure de se dire au revoir."
-        adamu "On se voit à l'école ne t'en fais pas."
-        hide ayaCalm
-        show ayaSorry at right
-        aya "Ca va être long d'attendre, je vais m'ennuyer toute seule..."
-        hide adamuSmileSchool
-        show adamuConfident at left
-        adamu "Ha ha ! Ma présence se mérite."
-        hide ayaSorry
-        show ayaBlushed at right
-        aya "*{i}Regarde Adam d'un air gêné.*"
-        hide ayaBlushed
-        show ayaCalm at right
-        aya "Bon je vais rentrer chez moi, mes parents m'attendent !"
-        aya "Rentre bien ! Et envoie un message quand tu seras rentré chez toi."
-        hide ayaCalm
-        show ayaBlushed at right
-        hide adamuConfident
-        show adamuSpeakingSerious at left
-        aya "Je veillerai jusqu'à ton retour, salut !"
-        adamu "Salut !"
-        hide ayaBlushed
-        hide adamuSpeakingSerious
-        show adamuSpeakingSerious at left
-        adamu "{i}Ouah c'était génial aujourd'hui j'en reviens pas."
-        adamu "{i} Il ne me reste plus qu'à prendre le dernier train et à filer..."
+            adamu "C'était vraiment cool aujourd'hui, je me suis bien amusé !"
+            aya "Oui, moi aussi ! Merci Adam c'est grâce à toi."
+            aya "Alors, c'est l'heure de se dire au revoir."
+            adamu "On se voit à l'école ne t'en fais pas."
+            hide ayaCalm
+            show ayaSorry at right
+            aya "Ca va être long d'attendre, je vais m'ennuyer toute seule..."
+            hide adamuSmileSchool
+            show adamuConfident at left
+            adamu "Ha ha ! Ma présence se mérite."
+            hide ayaSorry
+            show ayaBlushed at right
+            aya "*{i}Regarde Adam d'un air gêné.*"
+            hide ayaBlushed
+            show ayaCalm at right
+            aya "Bon je vais rentrer chez moi, mes parents m'attendent !"
+            aya "Rentre bien ! Et envoie un message quand tu seras rentré chez toi."
+            hide ayaCalm
+            show ayaBlushed at right
+            hide adamuConfident
+            show adamuSpeakingSerious at left
+            aya "Je veillerai jusqu'à ton retour, salut !"
+            adamu "Salut !"
+            hide ayaBlushed
+            hide adamuSpeakingSerious
+            show adamuSmileSchool at left
+            adamu "{i}Ouah c'était génial aujourd'hui j'en reviens pas. Enfin après 21 ans de misère sexuelle, je suis en COUPLE !"
+            hide adamuSmileSchool
+            show adamuSpeakingSerious at left
+            adamu "{i} Que se passe t-il maintenant que je suis seul, j'ai mon kokoro qui bat si vite."
+            hide adamuSpeakingSerious
+            show adamuConfident at left
+            adamu "{i} Oui, je crois que je commence à comprendre, c'est donc ça : être aimé."
+            adamu "{i} Bon, il ne me reste plus qu'à prendre le dernier train et à filer..."
 
-        play sound "audio/fx/notification.mp3" volume 0.2
+            stop music fadeout 0.5
 
-        "{i}*Téléphone vibre, Adam reçoit un message de Mami*{/i}"
-
-        hide adamuSpeakingSerious
-        show adamuSurprisedSchool at left
-        adamu "Hein ?! Un message de Mami !"
-        adamu "Elle me propose qu'on se voit demain !!!"
-
-
-        menu:
-            adamu "Qu'est-ce que je dois faire ?"
-            "Accepter le rendez-vous de Mami !":
-
-                jump scene4
-
-            "Refuser son rendez-vous, c'est peut-être un piège après tout...":
-
-                #jump to scene 5
-
-        stop music fadeout 0.5
-
-return
+            #jump to scene 5
+            return

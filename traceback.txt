@@ -1,36 +1,20 @@
 ï»¿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "renpy/common/00keymap.rpy", line 469, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 469, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 488, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-AttributeError: 'NoneType' object has no attribute 'stores'
+After initialization, but before game start.
+WindowsError: [Error 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: u'E:\\rguig-game\\game\\saves\\navigation.json'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00keymap.rpy", line 469, in script
-    python hide:
-  File "renpy/ast.py", line 928, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 2245, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00keymap.rpy", line 469, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 488, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-  File "renpy/loadsave.py", line 394, in save
-    roots = renpy.game.log.freeze(None)
-  File "renpy/python.py", line 2142, in freeze
-    self.complete(False)
-  File "renpy/python.py", line 1726, in complete
-    self.current.stores[name], self.current.delta_ebc[name] = sd.get_changes(begin)
-AttributeError: 'NoneType' object has no attribute 'stores'
+  File "renpy/bootstrap.py", line 331, in bootstrap
+    renpy.main.main()
+  File "renpy/main.py", line 612, in main
+    renpy.dump.dump(False)
+  File "renpy/dump.py", line 258, in dump
+    os.unlink(filename)
+WindowsError: [Error 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: u'E:\\rguig-game\\game\\saves\\navigation.json'
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 RGUIG GAME 1.0
-Mon Aug 15 16:54:47 2022
+Mon Aug 29 11:25:48 2022
