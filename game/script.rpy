@@ -6,6 +6,7 @@ define adamu = Character("Adamu", color="#7ed6df")
 define mami = Character("Mami", color="#f0932b")
 define aya = Character("Aya", color="#badc58")
 define noname = Character("???")
+define tino = Character ("Tino, le proscrit.", color="#c0392b")
 
 define characterSize = .8
 
@@ -95,6 +96,12 @@ init:
     image ebisuStreetNight:
         "background/env/ebisu_street_night.png"
 
+    image rainStreet:
+        "background/env/rain_street.jpeg"
+    
+    image tavernDark:
+        "background/env/tavern.png"
+
     # Background Phone
 
     image msgAdmissL2:
@@ -103,9 +110,28 @@ init:
     image msgClassMami:
         "background/phone/classroom_mami.png"
 
+    image msgMamiNude:
+        "background/phone/mami-nude.png"
+
+    image msgMamiFinish:
+        "background/phone/finish-mami.png"
+
 
     # Characters
 
+    # Tino
+
+    image tinoLaugh:
+        "characters/tino/laugh.png"
+        zoom characterSize
+
+    image tinoQuiet:
+        "characters/tino/quiet.png"
+        zoom characterSize
+
+    image tinoSmile:
+        "characters/tino/smile.png"
+        zoom characterSize
     # Adamu
 
     image adamuChill:
@@ -327,7 +353,7 @@ init:
 
 label start:
 
-    jump scene4
+    jump sceneMX
 
     scene adamuRoom
 
