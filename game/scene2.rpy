@@ -511,8 +511,8 @@ label scene2_1_2:
     "{i}Nom de code de l'opération: PLAN D(ate){/i}"
     scene black with dissolve
     stop music fadeout 2.0
-    "{i}Les jours passèrent. {w} Le jour saint du date arriva.{w} Samedi 10 septembre. 11h33, Chature-Re-Haru.{/i}"
-    # jump scene4
+    "{i}Les jours passèrent. {w} Le jour saint du date arriva.{w}{/i}"
+    jump scene3
     return
 
         
@@ -569,8 +569,8 @@ label scene2_1_1_1:
     scene jitenshaVisu
     pause 5.0
     scene black with dissolve
-
-    return
+    stop music
+    jump scene4
 
 label scene2_1_1_2:
     scene adamuRoom

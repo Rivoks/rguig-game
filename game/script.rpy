@@ -77,6 +77,24 @@ init:
     image parkNight:
         "background/env/park_night.png"
 
+    image trainStation:
+        "background/env/train_station.png"
+
+    image trainInt:
+        "background/env/train_int.png"
+
+    image ebisuStation:
+        "background/env/ebisu_station.png"
+
+    image ebisuBar:
+        "background/env/ebisu_bar.jpg"
+
+    image ebisuConcert:
+        "background/env/ebisu_concert.jpg"
+
+    image ebisuStreetNight:
+        "background/env/ebisu_street_night.png"
+
     # Background Phone
 
     image msgAdmissL2:
@@ -308,8 +326,6 @@ init:
 # The game starts here.
 
 label start:
-
-    jump scene1
 
     scene adamuRoom
 

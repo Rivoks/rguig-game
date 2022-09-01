@@ -1,5 +1,7 @@
 label scene3:
 
+    scene black with dissolve
+
     play music "audio/ost/train_station.mp3" volume 0.1
 
     "{i}Le lendemain..."
@@ -15,7 +17,7 @@ label scene3:
 
     adamu "Parfum, yes. "
     adamu "Chewing-gum c'est bon."
-    adamu "Capote, ok."
+    adamu "Capote, à la plonge."
 
     hide adamuConfident
 
@@ -75,14 +77,14 @@ label scene3:
     adamu "Wah sa grand mère !"
     hide adamuSurprisedSchool
     show adamuStun
-    adamu "C'est quoi cette voix, on dirait le freestyle du pédophile"
+    adamu "C'est quoi cette voix, on dirait le freestyle du pédophile !"
     hide adamuStun
     show adamuAngry
     play sound "audio/fx/train_doors.mp3" volume 0.2
     adamu "Bref, m'enfous."
     hide adamuAngry
     show adamuSmileSchool
-    adamu "Le principal c'est que je sois arrivé"
+    adamu "Le principal c'est que je sois arrivé."
     adamu "Ikuzo mina !"
     hide adamuSmileSchool
 
@@ -250,7 +252,7 @@ label scene3:
             hide adamuStun
             show adamuSorry at left
             adamu "{i}Purée je l'ai vraiment dit !"
-            aya "Kya !"
+            aya "Kyaaa !"
             aya "Tu ne te moques pas de moi ?"
             hide adamuSorry
             show adamuSpeakingSerious at left

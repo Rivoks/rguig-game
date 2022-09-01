@@ -152,7 +152,7 @@ label scene1:
             adamu "Parfait, demain est une belle journée. Autant en profiter."
             adamu "Ca te dirait de se promener ensemble dans le quartier ? Je connais un coin sympa."
             hide ayaSurprise
-            aya "C'est une bonne idée, on se voit demain alors"
+            aya "C'est une bonne idée, on se voit demain alors."
             adamu "Ca marche, rentre bien."
             aya "Toi aussi, salut !"
 
@@ -167,7 +167,7 @@ label scene1:
             "{i}Ainsi se termina la rentrée de notre jeunot, il pouvait se reposer il l'avait bien mérité."
 
             stop music
-            return
+            jump scene3
 
         "Non":
             show adamuConfident at left
@@ -251,7 +251,7 @@ label scene1:
                                     adamu "Bah je crois bien que c'est bibi !"
 
                                     return
-                                    #jump to scene 3
+                                    jump scene3
 
 
                                 "Non, c'est encore trop tôt !":

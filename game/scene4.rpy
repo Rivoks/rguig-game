@@ -1,4 +1,6 @@
 label scene4:
+    scene black with dissolve
+    "{i}00h03, Parc Georges Valbon.{/i}"
     scene parkNight with dissolve
     play music "audio/ost/lone_sojourner.mp3" fadein 2.0 volume 0.2 loop
     show adamuStoicOut with dissolve
