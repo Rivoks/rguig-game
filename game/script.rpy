@@ -7,8 +7,8 @@ define mami = Character("Mami", color="#f0932b")
 define aya = Character("Aya", color="#badc58")
 define noname = Character("???")
 define tino = Character ("Tino, le proscrit.", color="#c0392b")
-
 define characterSize = .8
+image credits_video = Movie(size=(1920,1080), channel="movie", play="video/credits.webm", loop=False)
 
 init python:
 
@@ -115,6 +115,9 @@ init:
 
     image msgMamiFinish:
         "background/phone/finish-mami.png"
+
+    image msgAyaEnd:
+        "background/phone/msgAyaEnd.png"
 
 
     # Characters
@@ -353,7 +356,7 @@ init:
 
 label start:
 
-    jump sceneMX
+    jump sceneAX
 
     scene adamuRoom
 

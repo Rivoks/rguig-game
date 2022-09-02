@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/sceneMX.rpy", line 34: end of line expected.
-    show mamiStoic with dissolve at left 
-                                 ^
-
-File "game/sceneMX.rpy", line 35: end of line expected.
-    show adamuSmileSchool with dissolve at right
-                                        ^
+File "game/screens.rpy", line 355: end of line expected.
+    if renpy.get_screen("main_menu"):
+    ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Thu Sep  1 20:18:17 2022
+Fri Sep  2 18:45:37 2022
