@@ -250,7 +250,6 @@ label scene1:
                                     adamu "C'est envoyé ! C'est qui le gros baiseur ?"
                                     adamu "Bah je crois bien que c'est bibi !"
 
-                                    return
                                     jump scene3
 
 
@@ -259,7 +258,7 @@ label scene1:
                                     adamu "Mieux vaut ne pas se presser avec les filles timides..."
                                     show adamuChillJoy
                                     adamu "J'ai fait le bon choix, c'est sûr !"
-                                    return
+
                                     jump scene5
 
                         "Non, attendre un peu. " :

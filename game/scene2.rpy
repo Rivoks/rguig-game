@@ -405,7 +405,6 @@ label scene2_2:
             mami "Bon allez à plus !"
             scene black with dissolve
             narrator "{i}La journée se termina pour Adamu. Les jours passèrent sans nouvelles de Mami...{/i}"
-            return
             jump scene5
 
 
@@ -513,7 +512,7 @@ label scene2_1_2:
     stop music fadeout 2.0
     narrator "{i}Les jours passèrent. {w} Le jour saint du date arriva.{w}{/i}"
     jump scene3
-    return
+
 
 
 label scene2_mami_dm:
@@ -582,4 +581,3 @@ label scene2_1_1_2:
     narrator "{i}Fin de journée pour Adamu.{i}"
 
     jump scene5
-    return

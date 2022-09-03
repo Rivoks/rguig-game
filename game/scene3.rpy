@@ -311,7 +311,7 @@ label scene3:
             stop music fadeout 0.5
 
             jump scene5
-            return
+
 
     stop music fadeout 0.5
 
@@ -365,4 +365,3 @@ label scene3:
         stop music fadeout 0.5
 
         jump sceneAX
-        return
