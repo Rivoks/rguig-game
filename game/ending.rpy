@@ -14,7 +14,7 @@ label ending:
     stop sound
     scene tavernDark with dissolve
     play sound "audio/fx/bar_ambiance.mp3" volume 0.1 loop
-    "{i}Cette enseigne semblait être fréquenté des désoeuvrés.{/i}"
+    "{i}Cette enseigne semblait être fréquentée des désoeuvrés.{/i}"
     "{i}Les gémissements d'agonies se faisaient entendre de toute part.{/i}"
     "{i}Adamu commanda un bon vieux verre de Ricard pour broyer du noir.{/i}"
     noname "Bah alors mon petit gars, qu'est-ce qu'il t'arrives à toi ?"

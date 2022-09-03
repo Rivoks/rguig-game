@@ -5,7 +5,7 @@ label scene5:
     play sound "audio/fx/light_rain.mp3" volume 0.2 loop
 
 
-    "{i}Deux mois s'étaient déjà écoulés depuis la rentré."
+    "{i}Deux mois s'étaient déjà écoulés depuis la rentrée."
     "{i}Les moments passés avec Aya et Mami semblaient si loin désormais..."
     "{i}Tout comme les derniers rayons de soleil laissaient place à la pluie."
 
@@ -348,7 +348,8 @@ label scene5:
     adamu "Hein ?!"
     hide najimoCalm
     show najimoMean
-    naji "HEY LES GARS, REGARDEZ UNE FILLE BOUREE SE FAIT ABUSER !"
+    play sound "audio/fx/collision.mp3" volume 0.2
+    naji "HEY LES GARS, REGARDEZ UNE FILLE BOUREE SE FAIT ABUSER !" with hpunch
     naji "Ce mec là c'est Adamu et il l'a forcé à l'embrasser !"
     adamu "Najimo ? Mais qu'est-ce que tu racontes !!!"
     adamu "Ecoutez-moi tous !!! Ce n'est pas vrai, je n'ai pas fait ça !"
@@ -371,11 +372,9 @@ label scene5:
     naji "Si tu savais le bien fou que ça me fait de te pourrir !"
     naji "Tu ne peux pas me comprendre après tout."
 
-    scene black with dissolve
-
     play sound "audio/fx/flashback.mp3" volume 0.2
 
-    show amphiSchool with dissolve
+    show amphiSchool with flash
     show najimoDark with dissolve
     naji "J'ai toujours été seul depuis le début. Personne ne s'intéressait à moi. C'était comme si je n'existais pas."
     naji "Alors peu à peu je me suis replié sur moi, je ne pouvais plus supporter cette souffrance."
@@ -396,9 +395,7 @@ label scene5:
     hide najimoDark
 
     play sound "audio/fx/flashback.mp3" volume 0.2
-    scene black with dissolve
-
-    show sikusuParty with dissolve
+    scene sikusuParty with flash
 
     show najimoMean
     naji "C'est fini à présent, la police va arriver d'une minute à l'autre."
@@ -412,7 +409,8 @@ label scene5:
     show najimoMean
     naji "Sache une chose, les corbeaux auront toujours le dernier mot."
 
-    "Adamu resta muet tout le long mais compris la situation. Cette fois-ci c'était du sérieux et s'il ne réagissait pas maintenant il serait définitivement fichu."
+    "{i}Adamu resta muet tout le long mais compris la situation.{/i}"
+    "{i}Cette fois-ci c'était du sérieux et s'il ne réagissait pas maintenant il serait définitivement fichu.{/i}"
 
     menu :
         adamu "{i}Merde, il faut que je réagisse !"
@@ -442,12 +440,12 @@ label scene5:
             adamu "{i}C'était mon dernier coup."
             hide najimoSkeptic
             show najimoMean
-            naji "Ta gueule bouffon !"
-            play sound "audio/fx/bump.mp3" volume 0.2
+            play sound "audio/fx/bump.mp3" volume 0.1
+            stop music
+            naji "MAIS FERME LÀ BOUFFON !!!" with hpunch
             hide najimoMean
             show najimoLaugh
             naji "Répète sans miauler pour voir."
-            stop music fadeout 0.5
             scene black with dissolve
             play music "audio/ost/despair.mp3" volume 0.1 loop
             "{i}Comment raisonner un corbeau, Najimo avait sombré dans la folie, c'était perdu d'avance."
@@ -457,8 +455,7 @@ label scene5:
             "{i}Qui sait comment allait se dérouler les jours suivant désormais..."
 
             stop music fadeout 0.5
-            #jump to scene X
-            return
+            jump endingAlt
 
         "Repli tactique !":
             stop music fadeout 0.5
@@ -473,5 +470,4 @@ label scene5:
             "{i}Qui sait comment allait se dérouler les jours suivant désormais..."
 
             stop music fadeout 0.5
-            #jump to scene X
-            return
+            jump endingAlt

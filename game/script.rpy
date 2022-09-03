@@ -7,6 +7,8 @@ define mami = Character("Mami", color="#f0932b")
 define aya = Character("Aya", color="#badc58")
 define noname = Character("???")
 define tino = Character ("Tino, le proscrit.", color="#c0392b")
+define kuro = Character("Kurome", color="#dd5aa7")
+define naji = Character("Najimo", color="#c52ad8")
 define characterSize = .8
 image credits_video = Movie(size=(1920,1080), channel="movie", play="video/credits.webm", loop=False)
 
@@ -101,6 +103,18 @@ init:
     
     image tavernDark:
         "background/env/tavern.png"
+
+    image meetingRoom:
+        "background/env/meeting_room.png"
+
+    image sportClass:
+        "background/env/sport_class.jpg"
+
+    image konbiniMarket:
+        "background/env/konbini.jpg"
+
+    image sikusuParty:
+        "background/env/sikusu_party.jpg"
 
     # Background Phone
 
@@ -351,12 +365,69 @@ init:
         zoom characterSize
 
 
+    # Najimo & Kurome
+
+    image najimoCalm:
+        "characters/najimo/najimo_calm.png"
+        zoom characterSize
+
+    image najimoLaugh:
+        "characters/najimo/najimo_laugh.png"
+        zoom characterSize
+
+    image najimoMean:
+        "characters/najimo/najimo_mean.png"
+        zoom characterSize
+
+    image najimoSkeptic:
+        "characters/najimo/najimo_skeptic.png"
+        zoom characterSize
+
+    image najimoDark:
+        "characters/najimo/najimo_dark.png"
+        zoom characterSize
+
+    image najimoDarkBlush:
+        "characters/najimo/najimo_dark_blush.png"
+        zoom characterSize
+
+    image kuromeCalmBDE:
+        "characters/kurome/kurome_calm_bde.png"
+        zoom characterSize
+
+    image kuromeHappyBDE:
+        "characters/kurome/kurome_happy_bde.png"
+        zoom characterSize
+
+    image kuromeCringeBDE:
+        "characters/kurome/kurome_cringe_bde.png"
+        zoom characterSize
+
+    image kuromeCalm:
+        "characters/kurome/kurome_calm.png"
+        zoom characterSize
+
+    image kuromeHappy:
+        "characters/kurome/kurome_happy.png"
+        zoom characterSize
+
+    image kuromeBlush:
+        "characters/kurome/kurome_blush.png"
+        zoom characterSize
+
+    image kuromeDrunk:
+        "characters/kurome/kurome_drunk.png"
+        zoom characterSize
+
+    image kuromeKiss:
+        "characters/kurome/kurome_kiss.png"
+        zoom characterSize
+
+
 
 # The game starts here.
 
 label start:
-
-    jump sceneAX
 
     scene adamuRoom
 
