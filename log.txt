@@ -1,14 +1,14 @@
-Mon Aug 29 11:09:18 2022
+Sat Sep  3 12:31:53 2022
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
  
 
-Bootstrap to the start of init.init took 0.09s
+Bootstrap to the start of init.init took 0.10s
 Early init took 0.00s
-Loader init took 0.03s
+Loader init took 0.02s
 Loading error handling took 0.03s
-Loading script took 0.35s
-Loading save slot metadata. took 0.09s
+Loading script took 0.45s
+Loading save slot metadata. took 0.05s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.09s
@@ -23,191 +23,19 @@ Initial gc. took 0.03s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.15s
+Creating interface object took 0.11s
 Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
+Init translation took 0.04s
+Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.04s
+Save screen analysis took 0.03s
 Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.21s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'GeForce GTX 570/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 391.35'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/scene3.rpy", line 301, in script
-    if $proposeAya == True:
-  File "renpy/ast.py", line 1898, in execute
-    if renpy.python.py_eval(condition):
-  File "renpy/python.py", line 2274, in py_eval
-    code = py_compile(code, 'eval')
-  File "renpy/python.py", line 835, in py_compile
-    raise e
-SyntaxError: invalid syntax (scene3.rpy, line 301)
-
-While running game code:
-  File "game/scene3.rpy", line 301, in script
-    if $proposeAya == True:
-SyntaxError: invalid syntax (scene3.rpy, line 301)
-Resetting cache.
-Bootstrap to the start of init.init took 109.19s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.29s
-Loading save slot metadata. took 0.03s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\AKSIL\\AppData\\Roaming/RenPy/backups\\rguig-game':
-Dump and make backups. took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.10s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'GeForce GTX 570/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 391.35'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Bootstrap to the start of init.init took 336.32s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.21s
-Loading save slot metadata. took 0.04s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\AKSIL\\AppData\\Roaming/RenPy/backups\\rguig-game':
-Dump and make backups. took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.10s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.04s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'GeForce GTX 570/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 391.35'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Bootstrap to the start of init.init took 764.38s
-Early init took 0.00s
-Loader init took 0.03s
-Loading error handling took 0.02s
-Loading script took 0.23s
-Loading save slot metadata. took 0.03s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\AKSIL\\AppData\\Roaming/RenPy/backups\\rguig-game':
-Dump and make backups. took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.11s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
+Interface start took 0.11s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -220,140 +48,7 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 766.16s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.18s
-Loading save slot metadata. took 0.04s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Dump and make backups. took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.12s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'GeForce GTX 570/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 391.35'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 775.27s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.16s
-Loading save slot metadata. took 0.03s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Dump and make backups. took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.11s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'GeForce GTX 570/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 391.35'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 793.87s
-Early init took 0.00s
-Loader init took 0.03s
-Loading error handling took 0.02s
-Loading script took 0.25s
-Loading save slot metadata. took 0.04s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.05s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\AKSIL\\AppData\\Roaming/RenPy/backups\\rguig-game':
-Dump and make backups. took 0.10s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.11s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'GeForce GTX 570/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 391.35'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 982.26s
+Bootstrap to the start of init.init took 30.39s
 Early init took 0.00s
 Loader init took 0.02s
 Loading error handling took 0.02s
@@ -366,6 +61,51 @@ Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\AKSIL\\AppData\\Roaming/RenPy/backups\\rguig-game':
+Dump and make backups. took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.10s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 570/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 391.35'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 61.13s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.02s
+Loading script took 0.27s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\AKSIL\\AppData\\Roaming/RenPy/backups\\rguig-game':
 Dump and make backups. took 0.08s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
@@ -378,11 +118,56 @@ Cleaning stores took 0.00s
 Init translation took 0.05s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.09s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 570/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 391.35'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 76.74s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.02s
+Loading script took 0.25s
+Loading save slot metadata. took 0.05s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\AKSIL\\AppData\\Roaming/RenPy/backups\\rguig-game':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.11s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.06s
@@ -398,27 +183,47 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 988.75s
+Bootstrap to the start of init.init took 96.89s
 Early init took 0.00s
-Loader init took 0.02s
+Loader init took 0.03s
 Loading error handling took 0.02s
-Loading script took 0.16s
-Loading save slot metadata. took 0.04s
+Loading script took 0.26s
+Loading save slot metadata. took 0.05s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.05s
 Loading analysis data took 0.03s
 Analyze and compile ATL took 0.01s
 Index archives took 0.00s
+Backing up script files to 'C:\\Users\\AKSIL\\AppData\\Roaming/RenPy/backups\\rguig-game':
+Dump and make backups. took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.12s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
 
-Full traceback:
-  File "renpy/bootstrap.py", line 331, in bootstrap
-    renpy.main.main()
-  File "renpy/main.py", line 612, in main
-    renpy.dump.dump(False)
-  File "renpy/dump.py", line 258, in dump
-    os.unlink(filename)
-WindowsError: [Error 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: u'E:\\rguig-game\\game\\saves\\navigation.json'
-
-After initialization, but before game start.
-WindowsError: [Error 32] Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: u'E:\\rguig-game\\game\\saves\\navigation.json'
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 570/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 391.35'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096

@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label scene3 is defined twice, at File "game/scene3.rpy", line 1:
-    label scene3:
-and File "game/script.rpy", line 922:
-    label scene3:
-
+File "game/scene5.rpy", line 373: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        play sound "audio/fx/flashback.mp3" volume 0.2"
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Mon Aug 15 19:15:04 2022
+Sat Sep  3 11:44:08 2022

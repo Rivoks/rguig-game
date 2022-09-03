@@ -308,7 +308,7 @@
 
                 stop music fadeout 0.5
 
-                #jump to scene5
+                jump scene5
                 return
 
         stop music fadeout 0.5
