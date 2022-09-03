@@ -8,7 +8,7 @@ label sceneAX:
     adamu "Je l'aime trop ma petite Aya, j'ai trop envie de..."
     adamu "J'ai trop envie de benzer j'arrive plus à me retenir..."
     adamu "Je lui ai déjà demandé mais elle a pas l'air partante... {w}zebi."
-    adamu "Bon tant pis j'attendrais."
+    adamu "Bon tant pis j'attendrai."
     scene adamuRoom
     "{i}** Téléphone vibre **{/i}"
     play sound "audio/fx/notification.mp3" volume 0.3
@@ -19,7 +19,7 @@ label sceneAX:
     show adamuChillJoy with dissolve
     pause
     scene adamuRoom
-    show adamuSurprise 
+    show adamuSurprise
     play sound "audio/fx/collision.mp3" volume 0.3
     adamu "BORDEL DE MERDE QU'EST-CE QU'IL SE PASSE ???" with hpunch
     adamu "Putain est-ce que j'ai merdé ? Qu'est-ce qu'elle veut bien vouloir me dire..."
@@ -49,7 +49,7 @@ label sceneAX:
     show adamuSurprisedSchool at right
     adamu "Mais qu'est-ce que tu racontes... Tu peux pas me faire ça !"
     show adamuSorry2 at right
-    adamu "C'est une blague hein ?!{w} Tu veux que je te finisses ?"
+    adamu "C'est une blague hein ?!{w} Tu veux que je te finisse ?"
     hide ayaHurt
     aya "Je suis vraiment désolée t'y es pour rien !"
     show ayaHurt at left
@@ -74,10 +74,10 @@ label sceneAX:
     pause 3.0
     scene classroomExt with dissolve
     "{i}Comme à son habitude, on venait de lui fermer la porte au nez.{/i}"
-    "{i}Son coeur n'allait s'en remettre avant plusieurs années.{/i}"
+    "{i}Son coeur n'allait pas s'en remettre avant plusieurs années.{/i}"
     pause 3.0
     scene stairsSchool with dissolve
-    "{i}Surmonter les marches lui semblait être une éternité...{/i}"
+    "{i}Surmonter ces marches lui semblait être une éternité...{/i}"
     "{i}Mais l'éternité n'est qu'instant pour le condamné.{/i}"
     pause 3.0
     scene cafeteriaSchool with dissolve
@@ -86,10 +86,9 @@ label sceneAX:
     pause 3.0
     scene frontSchool with dissolve
     "{i}La journée, bien qu'elle fut longue et rude, se termina.{/i}"
-    "{i}Notre RGUIG National se retrouve en piteux état, pathétique si bien que nous ne pouvons vous le montrer.{/i}"
+    "{i}Notre RGUIG National se retrouva en piteux état, si pathétique que nous ne pouvons vous le montrer.{/i}"
     pause 3.0
     scene streetEve with dissolve
     "{i}Finalement, il aura fait ce qu'il a pu.{/i}"
     "{i}Merci pour tout Adamu, tu t'es bien battu.{/i}"
     jump ending
-

@@ -14,9 +14,9 @@ label scene2:
     show mamiStoic at left
 
     show adamuSmileSchool at right
-    
+
     mami "..."
-    
+
     adamu "Salut Mami!"
 
     show mamiAngryCute at left
@@ -55,7 +55,7 @@ label scene2:
     adamu "Oui c’est normal je suis à la diète en ce moment, on m’a mit mal ahah..."
 
     show mamiTaunt at left
-    
+
     mami "C'est pour plaire aux filles que tu le fais hein..."
 
     show adamuSorry2 at right
@@ -64,14 +64,14 @@ label scene2:
     adamu "Vous voulez bien ?"
 
     show mamiTaunt at left
-    
-    mami "J'en étais sûre ahah"
+
+    mami "J'en étais sûre haha !"
     mami "Alors t'as des vues sur qui ? Tu vas tout me dire !"
 
     show adamuSorry at right
     hide adamuSorry2
 
-    adamu "Ahah pourquoi pas mais toi tu t'intéresse pas aux mecs ?"
+    adamu "Haha pourquoi pas mais toi tu t'intéresses pas aux mecs ?"
 
     show mamiStoic at left
 
@@ -87,11 +87,11 @@ label scene2:
 
     show mamiSpeaking at left
 
-    mami "C’est rien t’inquiètes, je viens juste de sortir d’une longue relation c’est un peu compliqué du coup..."
+    mami "C’est rien t’inquiète, je viens juste de sortir d’une longue relation c’est un peu compliqué du coup..."
 
-    adamu "Ah excuses-moi... je... euh..."
+    adamu "Ah excuse-moi... je... euh..."
 
-    mami "Tu pouvais pas savoir t'inquiètes."
+    mami "Tu pouvais pas savoir t'inquiète."
 
     show mamiAnnoyed at left
 
@@ -107,7 +107,7 @@ label scene2:
 
 label scene2_1:
     scene cafeteriaSchool
-    
+
     show mamiBlush at left
 
     show adamuSpeakingSerious at right
@@ -121,7 +121,7 @@ label scene2_1:
     stop music fadeout 2.0
     play sound "audio/fx/exclamation.mp3" volume 0.5
 
-    narrator "{i}Aya venait d'arriver au réfectoire du CROUS, elle suprend au loin Adamu en train de déjeuner avec Mami. Adam croisa son regard et l'évita aussitôt{/i}"
+    narrator "{i}Aya venait d'arriver au réfectoire du CROUS, elle surprend au loin Adamu en train de déjeuner avec Mami. Adam croisa son regard et l'évita aussitôt.{/i}"
 
     scene cafeteriaSchool with dissolve
 
@@ -138,7 +138,7 @@ label scene2_1:
 
     mami "Qu’est-ce qu’il y’a ?"
 
-    adamu "Ah non rien t’inquiètes pas, j’ai un peu mal au ventre je pense que c’était pas très frais ce qu’on a mangé ahah…"
+    adamu "Ah non rien t’inquiète pas, j’ai un peu mal au ventre je pense que c’était pas très frais ce qu’on a mangé haha…"
 
     mami "Ah bon tu trouves ? Moi j’ai trouvé ça plutôt bon."
 
@@ -158,7 +158,7 @@ label scene2_1:
 
     show adamuSorry at right with dissolve
 
-    adamu "Ah oui désolé, j’ai la tête qui tourne un petit peu, ahah…"
+    adamu "Ah oui désolé, j’ai la tête qui tourne un petit peu, haha…"
 
     mami "Bon en vrai on a fini de manger de toute façon, si tu veux on peut…"
 
@@ -201,7 +201,7 @@ label scene2_1:
 
     show mamiStoic at left with dissolve
 
-    mami "Bon il faut que j’y aille ! C’était plutôt cool ce midi"
+    mami "Bon il faut que j’y aille ! C’était plutôt cool ce midi."
 
     adamu "Ouais clairement ! On se refera ça hein ?"
 
@@ -267,7 +267,7 @@ label scene2_1:
     adamu "{i}C’est bon, le top-départ a été lancé, il faut à tout prix que je la wombo-combo avec des disquettes.{/i}"
     adamu "{i}Je sais bien qu’elle ma surprit en flag’, c’est un piège mais elle ne m’aura pas comme ça !{/i}"
     show adamuVeryHappy
-    adamu "{i}Après tout je suis l’ultime Ninja ayant sauvé l’opération plan H par le passé… Ahah si elle savait...{/i}"
+    adamu "{i}Après tout je suis l’ultime Ninja ayant sauvé l’opération plan H par le passé… Haha si elle savait...{/i}"
 
     scene classroomSchool with dissolve
 
@@ -278,7 +278,7 @@ label scene2_1:
 
     aya "Ah ouais c'est cool ça ! J’ai mangé avec des amies du lycée, à vrai dire je ne me suis pas vraiment fait d’amies à la fac..."
 
-    adamu "Ah ouais pourtant tout le monde voudrait devenir ami avec une fille aussi mignonne ahah"
+    adamu "Ah ouais pourtant tout le monde voudrait devenir ami avec une fille aussi mignonne haha..."
 
     show ayaBlushed2 at left
 
@@ -325,10 +325,10 @@ label scene2_1:
         "Euh ouais c’est elle qui veut me voir hein moi j’ai rien demandé et puis...":
             stop music
             jump scene2_1_1
-        "Non du tout ! C'est un ami qui m'a envoyé un drôle de message, t'es parano un peu ahah...":
+        "Non du tout ! C'est un ami qui m'a envoyé un drôle de message, t'es parano un peu haha...":
             stop music fadeout 3.0
             jump scene2_1_2
-        
+
 label scene2_2:
 
     show adamuStun at right
@@ -339,7 +339,7 @@ label scene2_2:
 
     menu:
         "Répondre à Mami-chan:"
-        "En tout cas si t'as un problème tu peux m'appeler n'hésites pas":
+        "En tout cas si t'as un problème tu peux m'appeler n'hésite pas":
             scene cafeteriaSchool
             show adamuConfident at right
             show mamiBlush at left
@@ -358,7 +358,7 @@ label scene2_2:
             scene frontSchool with dissolve
             show adamuConfident at right with dissolve
             show mamiStoic at left with dissolve
-            mami "Bon il faut que j’y aille ! C’était plutôt cool ce midi"
+            mami "Bon il faut que j’y aille ! C’était plutôt cool ce midi."
             adamu "Ouais clairement ! On se refera ça hein ?"
             show mamiTaunt at left
             hide mamiStoic
@@ -393,11 +393,11 @@ label scene2_2:
             jump scene2_mami_dm
         "...":
             scene cafeteriaSchool
-            narrator "{i}Le déjeuner se passa sans accrocs. {/i}"
+            narrator "{i}Le déjeuner se passa sans accroc. {/i}"
             scene frontSchool with dissolve
             show adamuConfident at right with dissolve
             show mamiStoic at left with dissolve
-            mami "Bon il faut que j’y aille ! C’était plutôt cool ce midi"
+            mami "Bon il faut que j’y aille ! C’était plutôt cool ce midi."
             adamu "Ouais clairement ! On se refera ça hein ?"
             show adamuSorry at right
             hide adamuConfident
@@ -407,25 +407,25 @@ label scene2_2:
             narrator "{i}La journée se termina pour Adamu. Les jours passèrent sans nouvelles de Mami...{/i}"
             return
             jump scene5
-            
-            
+
+
 label scene2_1_1:
 
     scene classroomSchool
     show ayaHurt at left
     show adamuSorry at right
-    
+
     aya "T’as pas à te justifier Adamu hein ? On est qu’ami tous les deux..."
-    
+
     show adamuSorry2 at right
     hide adamuSorry2
 
     adamu "Ouais je sais mais c’est que..."
     scene classroomSchool with dissolve
     show adamuCryingSchool with dissolve
-    play music "audio/ost/dramatic_kaguya.mp3" volume 0.2 loop 
+    play music "audio/ost/dramatic_kaguya.mp3" volume 0.2 loop
     adamu "{i}On m'a mit mal, je veux mourir.{/i}"
-    
+
     scene classroomSchool with dissolve
     show adamuSorry at right with dissolve
     show ayaCalm at left with dissolve
@@ -456,7 +456,7 @@ label scene2_1_1:
 
     scene classroomSchool with dissolve
 
-    narrator "{i}Aya était en larme, elle parti en courant.{w} Toute la salle était abasourdie face à la scène, des murmures se faisaient entendre, rien de bon pour la réputation de notre Majin Boo national{/i}"
+    narrator "{i}Aya était en larme, elle partit en courant.{w} Toute la salle était abasourdie face à la scène, des murmures se faisaient entendre, rien de bon pour la réputation de notre Majin Boo national.{/i}"
 
     jump scene2_mami_dm
 
@@ -478,7 +478,7 @@ label scene2_1_2:
     narrator "{i}Et leur petite scène de ménage continua. Ils étaient tellement mignons que beaucoup dans la salle pensaient à la formation même d'un couple à cet instant.{/i}"
     show adamuConfident at right with dissolve
     show ayaLaugh at left with dissolve
-    adamu "Et c'est comme ça que ma mère m'a suprise sur Twitter en train de dire que j'allais niquer des daronnes !"
+    adamu "Et c'est comme ça que ma mère m'a surpris sur Twitter en train de dire que j'allais niquer des daronnes !"
     aya "Ahah qu'est-ce que t'es bête Adamu !"
     scene classroomSchool with dissolve
     show adamuStun with dissolve
@@ -508,14 +508,14 @@ label scene2_1_2:
     narrator "{i}À moment précis, Adamu commenceait à monter les saintes marches de la légende du P.A.L.M.{/i}"
     narrator "{i}Un moment historique dans sa longue vie d'ermite croupissant dans les débris de sa chambre morose.{/i}"
     narrator "{i}Il venait d'obtenir le premier date de toute sa vie. Plus rien ne sera comme avant. {/i}"
-    narrator "{i}Nom de code de l'opération: PLAN D(ate){/i}"
+    narrator "{i}Nom de code de l'opération: PLAN D(ate).{/i}"
     scene black with dissolve
     stop music fadeout 2.0
     narrator "{i}Les jours passèrent. {w} Le jour saint du date arriva.{w}{/i}"
     jump scene3
     return
 
-        
+
 label scene2_mami_dm:
     scene black with dissolve
 
@@ -561,7 +561,7 @@ label scene2_1_1_1:
     scene jitenshaVisu with dissolve:
         xpos 0.85 ypos 1.0 xanchor 0.66 yanchor 0.93 zoom 1.5
         linear 5 yanchor 0.8
-    
+
     pause 5.0
     scene jitenshaVisu with dissolve
     play sound 'audio/fx/anime_wow.mp3' volume 0.5
@@ -577,11 +577,9 @@ label scene2_1_1_2:
     show adamuChill
 
     adamu "Bon en vrai la flemme de la voir, c'est trop pour moi aujourd'hui... {w} Je vais tag une petite game et ensuite dodo."
-    
+
     scene black with dissolve
-    narrator "{i}Fin de journée pour Adamu{i}"
+    narrator "{i}Fin de journée pour Adamu.{i}"
 
     jump scene5
     return
-
-  

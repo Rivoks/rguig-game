@@ -5,7 +5,7 @@ label scene4:
     play music "audio/ost/lone_sojourner.mp3" fadein 2.0 volume 0.2 loop
     show adamuStoicOut with dissolve
     adamu "Bon je suis devant le parc... Faut que je reste calme."
-    adamu "Mami m'attends à l'autre bout au niveau du lac, juste après le Pont Iris."
+    adamu "Mami m'attend à l'autre bout au niveau du lac, juste après le Pont Iris."
     hide adamuStoicOut
     show adamuCloseEyesOut
     adamu "C'est donc ici que tout commence pour moi..."
@@ -27,7 +27,7 @@ label scene4:
     scene black with dissolve
     play music "audio/ost/love_dramatic.mp3" fadein 2.5 volume 0.2 loop
     narrator "{i}Adamu traversa le parc pour rejoindre Mami qui l'attendait à l'autre bout.{/i}"
-    narrator "{i}Que va-t-il advenir à notre héro au ventre-en-cœur ?{/i}"
+    narrator "{i}Que va-t-il advenir de notre héro au ventre-en-cœur ?{/i}"
     narrator "{i}Nous le saurons dans un instant, juste après la pub.{/i}"
     narrator "{i}Est-ce que vous avez déjà entendu parler de Nord VPN ?{/i}"
     narrator "{i}Et bien en réalité vous pouvez vous connecter{w}... Non je déconne on a pas le temps pour ces conneries.{/i}"
@@ -40,7 +40,7 @@ label scene4:
     play music "audio/ost/papakatsu.mp3" fadein 2.0 volume 0.2 loop
     adamu "Salut ahah..."
     mami "Finalement tu as fini par venir."
-    adamu "Ah ouais désolé mon vélo a crevé sur le chemin, encore ces satanés corbeaux ahah..."
+    adamu "Ah ouais désolé mon vélo a crevé sur le chemin, encore ces satanés corbeaux haha..."
     mami "..."
     show mamiShyOut at left
     mami "Pouquoi t'es venu finalement ?"
@@ -48,7 +48,7 @@ label scene4:
     show adamuSmileOutAlt at right
     adamu "Et puis tu avais visiblement quelque chose à me dire donc je suis là."
     mami "..."
-    hide mamiShyOut 
+    hide mamiShyOut
     show mamiShyOut2 at left
     mami "Bon voilà j'avais simplement besoin de parler un petit peu."
     mami "En vrai je sais pas pourquoi je t'ai demandé de se voir..."
@@ -58,14 +58,14 @@ label scene4:
     adamu "Je te l'ai dis, en cas de problème je serais toujours là pour toi."
     show mamiShyEyesOpen at left
     mami "..."
-    mami "Comme tu le sais je suis nouvelle dans la ville, je me suis fait plein d'amis et je commence à me faire à cette nouvelle vie"
+    mami "Comme tu le sais je suis nouvelle dans la ville, je me suis fait plein d'amis et je commence à me faire à cette nouvelle vie."
     show mamiSpeakingOut at left
     mami "Tout semble bien aller mais je ne sais pas..."
     mami "C'est comme s'il manquait une pièce dans le puzzle..."
     scene parkNightBench with dissolve
     show adamuStoicOut with dissolve
     adamu "{i}La pièce manquante du puzzle...{/i}"
-    show adamuAngryOut 
+    show adamuAngryOut
     play sound "audio/fx/collision.mp3" volume 0.8
     adamu "{i}MAIS JE RECONNAIS, CETTE PIÈCE DU PUZZLE C'EST MON GIGA-CHIBRAX LVL. 100 DONT ELLE VEUT PARLER !!!{/i}" with hpunch
     hide adamuAngryOut
@@ -161,14 +161,14 @@ label scene4:
             show mamiShyHappyOut at left
             mami "Je vois ça tu fais une tête trop drôle depuis tout à l'heure."
             show adamuShyOut2 at right
-            adamu "J'arrive pas à cacher ma joie ahah..."
+            adamu "J'arrive pas à cacher ma joie haha..."
             show mamiSpeakingOut at left
             mami "Bon il se fait tard je pense que je vais rentrer..."
-            menu: 
+            menu:
                 "Supplément boursin ?"
                 "Oui":
                     show adamuSmileOut at right
-                    adamu "Bon bah je te raccompagnes chez toi quand même !"
+                    adamu "Bon bah je te raccompagne chez toi quand même !"
                 "Non (t'es un enfoiré)":
                     show adamuSmileOut at right
                     adamu "Bon bah dans ce cas on se dit à demain..."
@@ -208,4 +208,3 @@ label scene4:
             narrator "{i}Et les miracles, {w} s'arrêtent à la porte du condamné.{/i}"
             stop music
             jump scene5
-             

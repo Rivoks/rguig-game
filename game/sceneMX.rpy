@@ -5,7 +5,7 @@ label sceneMX:
     scene adamuRoom with dissolve
     show adamuChill with dissolve
     play music "audio/ost/lone_sojourner.mp3" volume 0.2 loop fadein 2.0
-    adamu "Putain je suis trop heureux, j'ai envie de plus bouger de mon lit."
+    adamu "Putain je suis trop heureux, j'ai plus envie de bouger de mon lit."
     adamu "Attends je dois me re-mater la masterclass que j'ai reçu..."
     scene msgMamiNude with dissolve
     play sound "audio/fx/anime_wow.mp3" volume 0.3
@@ -25,7 +25,7 @@ label sceneMX:
     show adamuChillJoy with dissolve
     pause
     scene adamuRoom
-    show adamuSurprise 
+    show adamuSurprise
     play sound "audio/fx/collision.mp3" volume 0.3
     adamu "BORDEL DE MERDE QU'EST-CE QU'IL SE PASSE ???" with hpunch
     adamu "Putain est-ce que j'ai merdé ? Qu'est-ce qu'elle veut bien vouloir me dire..."
@@ -49,14 +49,14 @@ label sceneMX:
     mami "Écoute Adamu... C'est vraiment pas de ta faute..."
     mami "C'est juste que finalement j'ai l'impression que c'était pas le bon choix..."
     show mamiSpeaking at left
-    mami "Je pense qu'on devrait en arrêter là, j'ai pas envie de te faire du mal..."
+    mami "Je pense qu'on devrait en rester là, j'ai pas envie de te faire du mal..."
     show adamuSurprisedSchool at right
     adamu "Mais qu'est-ce que tu racontes... Tu peux pas me faire ça !"
     show adamuSorry2 at right
     adamu "C'est une blague hein ? On s'était dit que t'étais ma Mami-chan et puis..."
     hide mamiSpeaking
     mami "Adamu c'est bon c'est pas la peine, on doit s'arrêter là."
-    mami "Je suis désolé mais pour nous c'est..."
+    mami "Je suis désolée mais pour nous c'est..."
     play sound "audio/fx/glass_break.mp3" volume 0.1
     mami "Mort et enterré." with hpunch
     show mamiSpeaking at left
@@ -82,7 +82,7 @@ label sceneMX:
     "{i}Son coeur n'allait s'en remettre avant plusieurs années.{/i}"
     pause 3.0
     scene stairsSchool with dissolve
-    "{i}Surmonter les marches lui semblait être une éternité...{/i}"
+    "{i}Surmonter ces marches lui semblait être une éternité...{/i}"
     "{i}Mais l'éternité n'est qu'instant pour le condamné.{/i}"
     pause 3.0
     scene cafeteriaSchool with dissolve
@@ -91,15 +91,9 @@ label sceneMX:
     pause 3.0
     scene frontSchool with dissolve
     "{i}La journée, bien qu'elle fut longue et rude, se termina.{/i}"
-    "{i}Notre RGUIG National se retrouve en piteux état, pathétique si bien que nous ne pouvons vous le montrer.{/i}"
+    "{i}Notre RGUIG National se retrouve en piteux état, si pathétique que nous ne pouvons vous le montrer.{/i}"
     pause 3.0
     scene streetEve with dissolve
     "{i}Finalement, il aura fait ce qu'il a pu.{/i}"
     "{i}Merci pour tout Adamu, tu t'es bien battu.{/i}"
     jump ending
-
-
-
-
-
-

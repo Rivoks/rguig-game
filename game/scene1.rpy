@@ -1,6 +1,6 @@
 label scene1:
     scene classroomExt with dissolve
-    narrator "{i}Lundi 5 septembre 2022, 8h03"
+    narrator "{i}Lundi 5 septembre 2022, 8h03."
     play sound "audio/fx/classroom.mp3" volume 0.1 fadein 1.0
 
     show adamuSmileSchool with dissolve
@@ -12,7 +12,7 @@ label scene1:
 
     show adamuSpeakingSerious
 
-    "*Jette un rapide coup d'oeil*"
+    "*Jette un rapide coup d'oeil.*"
     adamu "..."
 
     show adamuAngry
@@ -21,7 +21,7 @@ label scene1:
 
     show adamuVeryAngry
 
-    adamu "Y'a que des chinois 1m10 les bras levés comme en 2nd"
+    adamu "Y'a que des chinois 1m10 les bras levés comme en 2nd."
     "*Zieute*"
 
     show adamuAngry
@@ -57,14 +57,14 @@ label scene1:
     show ayaCalm at right with dissolve
 
     adamu "Salut, comment ça va depuis le temps ?"
-    noname "Bien merci, au fait moi c'est Aya"
+    noname "Bien merci, au fait moi c'est Aya."
     aya "Aya Kataragi."
     adamu "Adam, enchanté."
 
     show adamuSmileSchool at left
 
     adamu "On est dans la même classe, c'est cool."
-    adamu "J'espère qu'on va bien s'entendre"
+    adamu "J'espère qu'on va bien s'entendre."
 
     show ayaBlushed at right
 
@@ -80,9 +80,9 @@ label scene1:
 
 
     "Yoshida" "Bonjour, je m'appelle Yoshida et je serai votre professeur principal pour ce semestre."
-    narrator "Rentrons dans le vif du sujet sans tarder."
-    narrator "Ce semestre, vous aurez un projet d'informatique à réaliser en binôme."
-    narrator "Le choix du binôme est libre, bien évidemment."
+    "Yoshida" "Rentrons dans le vif du sujet sans tarder."
+    "Yoshida" "Ce semestre, vous aurez un projet d'informatique à réaliser en binôme."
+    "Yoshida" "Le choix du binôme est libre, bien évidemment."
 
     hide yoshida with dissolve
 
@@ -108,7 +108,7 @@ label scene1:
     show ayaBlushed2 at right
 
     aya "Ca ne te dérange pas que ce soit avec moi ?"
-    adamu "Bien sûr que non"
+    adamu "Bien sûr que non !"
 
     show ayaCalm at right
     aya "Merci, Adam."
@@ -184,7 +184,7 @@ label scene1:
             stop music
 
             scene black with dissolve
-            narrator "{i}Chambre d'Adam, 19h07"
+            narrator "{i}Chambre d'Adam, 19h07."
 
             scene adamu_room with dissolve
 
@@ -275,7 +275,7 @@ label scene1:
                             adamu "Tin tin tin !"
                             hide adamuChillJoy
                             show adamuSurprise
-                            adamu "Waaaah"
+                            adamu "Waaaah !"
                             hide adamuSurprise
                             show adamuChillJoy
                             adamu "Ololo c'est trop !"
@@ -320,4 +320,3 @@ label scene1:
                             stop music
 
                             jump scene5
-

@@ -44,7 +44,7 @@ label scene5:
     naji "Justement, rejoindre une asso pourrait être un bon moyen de te changer les idées."
     naji "Tu pourrais rencontrer du monde et te faire des amis qui partagent la même passion."
     adamu "Sûrement, ouais..."
-    adamu "{i}Je me sens tellement vide en ce moment...Et s'il avait raison ?"
+    adamu "{i}Je me sens tellement vide en ce moment... Et s'il avait raison ?"
     naji "Passe demain à la salle E205 à partir de 10h, je crois que c'est une nouvelle association qui recrute."
     adamu "Et c'est une asso de quoi ?"
     naji "Je n'en sais pas plus, c'est juste des bruits de couloir que j'ai entendu."
@@ -422,7 +422,7 @@ label scene5:
             show najimoSkeptic
             adamu "Je sais que tu te sentais seul depuis tout ce temps et que tu avais besoin d'un peu d'amour !"
             adamu "Tu penses qu'on est différent, mais..."
-            adamu "Détrompe-toi ! Moi aussi j'ai connu ce sentiment bien trop longtemps et des nuits entières passées le calebut rempli de mayonaise."
+            adamu "Détrompe-toi ! Moi aussi j'ai connu ce sentiment bien trop longtemps et des nuits entières passées le calebut rempli de mayonnaise."
             adamu "Mais tu peux encore changer comme je l'ai fait !"
             naji "..."
             adamu "Et si tu ne crois pas en toi, crois en moi qui crois en toi !"

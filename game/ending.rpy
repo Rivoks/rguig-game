@@ -9,18 +9,18 @@ label ending:
     scene rainStreet with dissolve
     narrator "{i}Là, dans cette ruelle aux sournois appels.{i}"
     narrator "{i}Adamu s'en allait marcher sans savoir où aller.{i}"
-    narrator "{i}Finalement il s'arrêta devant une taverne malfamé. {w}Les vrais rats reconnaissent les ratelières.{i}"
+    narrator "{i}Finalement il s'arrêta devant une taverne malfamée. {w}Les vrais rats reconnaissent les ratelières.{i}"
 
     stop sound
     scene tavernDark with dissolve
     play sound "audio/fx/bar_ambiance.mp3" volume 0.1 loop
-    narrator "{i}Cette enseigne semblait être fréquentée des désoeuvrés.{/i}"
+    narrator "{i}Cette enseigne semblait être fréquentée par des désoeuvrés.{/i}"
     narrator "{i}Les gémissements d'agonies se faisaient entendre de toute part.{/i}"
     narrator "{i}Adamu commanda un bon vieux verre de Ricard pour broyer du noir.{/i}"
-    noname "Bah alors mon petit gars, qu'est-ce qu'il t'arrives à toi ?"
+    noname "Bah alors mon petit gars, qu'est-ce qu'il t'arrive à toi ?"
     show tinoSmile with dissolve
     noname "T'as pas l'air dans ton assiette, hein..."
-    noname "Qu'est-ce tu dis ? {w} Ta gonzesse vient de quitter ?"
+    noname "Qu'est-ce tu dis ? {w} Ta gonzesse vient de te quitter ?"
     show tinoLaugh
     play sound "audio/fx/collision.mp3" volume 0.2
     noname "BAHAHAHAHAH !" with hpunch
@@ -29,10 +29,10 @@ label ending:
     noname "C'est pas contre toi mon vieux hein, sans rancune."
     noname "Simplement ici c'est monnaie courante ce genre d'histoire."
     noname "T'en fais pas, en réalité c'est toutes des grosses folles."
-    show tinoSmile 
+    show tinoSmile
     noname "Je t'assure te prends pas la tête mec."
     noname "... {w} Hein comment ça ?{w} Hmm... C'était ta première meuf ?"
-    noname "Tu lui as tout donné et elle t'as quitté..."
+    noname "Tu lui as tout donné et elle t'a quitté..."
     hide tinoSmile
     show tinoLaugh
     play sound "audio/fx/collision.mp3" volume 0.2
@@ -42,7 +42,7 @@ label ending:
     show tinoSmile
     noname "Écoute moi enfoiré, je crois que t'as pas compris le délire."
     noname "T'es un putain de rat mec. {w} Pas un corbeau{w}, t'entends ?"
-    noname "Tout ce qu'il te reste à faire, c'est de terminer ta putain quête."
+    noname "Tout ce qu'il te reste à faire, c'est de terminer ta putain de quête."
     noname "L'amour c'est pas pour nous, on est des maudits{w}, tu comprends pas vrai ?"
     show tinoLaugh
     play sound "audio/fx/collision.mp3" volume 0.2
