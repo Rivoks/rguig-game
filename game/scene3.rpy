@@ -4,14 +4,14 @@ label scene3:
 
     play music "audio/ost/train_station.mp3" volume 0.1
 
-    "{i}Le lendemain..."
-    "{i}Le jour tant attendu arriva."
-    "{i}Pour une fois, notre Adamu était en avance."
-    "{i}Oui vous ne rêvez pas, le même Adamu qui ne s'était pas réveillé le jour de son concours blanc de PACES."
+    narrator "{i}Le lendemain..."
+    narrator "{i}Le jour tant attendu arriva."
+    narrator "{i}Pour une fois, notre Adamu était en avance."
+    narrator "{i}Oui vous ne rêvez pas, le même Adamu qui ne s'était pas réveillé le jour de son concours blanc de PACES."
 
     show trainStation with dissolve
 
-    "{i}Gare de Mommenrency, 11h07."
+    narrator "{i}Gare de Mommenrency, 11h07."
 
     show adamuConfident with dissolve
 
@@ -23,8 +23,8 @@ label scene3:
 
     show adamuSpeakingSerious
     play sound "audio/fx/breathing.mp3" volume 0.2
-    "{i}Respire..."
-    "{i}Ca va bien se passer, allez ! Je me suis entrainé à sourire."
+    narrator "{i}Respire..."
+    narrator "{i}Ca va bien se passer, allez ! Je me suis entrainé à sourire."
 
     hide adamuSpeakingSerious
 
@@ -299,18 +299,18 @@ label scene3:
             adamu "Sûrement, oui."
 
             scene black with dissolve
-            "Aie ! Adamu venait de laisser passer une occasion en or et il s'en était rendu compte."
-            "Il resta silencieux pendant toute la fin du concert."
-            "Aya et lui s'enchangèrent quelques regards mais rien de plus."
-            "Eh oui, qu'il est con ! Aya attendait la déclaration de notre jeune riche, elle était déçue mais essaya de sauver les apparences."
-            "Adamu ne pouvait plus supporter la réalité en face. Cette réalité où il ne sera jamais avec une hlel."
-            "Pris de honte, il s'éclipsa discrètement et resta assis dehors sur un banc jusqu'à la fin du concert."
-            "Evidemment, remarquant qu'Adamu avait disparu, Aya le chercha, tenta de l'appeler mais rien à faire, Adamu ne répondit pas."
-            "Quel gâchis !"
+            narrator "Aie ! Adamu venait de laisser passer une occasion en or et il s'en était rendu compte."
+            narrator "Il resta silencieux pendant toute la fin du concert."
+            narrator "Aya et lui s'enchangèrent quelques regards mais rien de plus."
+            narrator "Eh oui, qu'il est con ! Aya attendait la déclaration de notre jeune riche, elle était déçue mais essaya de sauver les apparences."
+            narrator "Adamu ne pouvait plus supporter la réalité en face. Cette réalité où il ne sera jamais avec une hlel."
+            narrator "Pris de honte, il s'éclipsa discrètement et resta assis dehors sur un banc jusqu'à la fin du concert."
+            narrator "Evidemment, remarquant qu'Adamu avait disparu, Aya le chercha, tenta de l'appeler mais rien à faire, Adamu ne répondit pas."
+            narrator "Quel gâchis !"
 
             stop music fadeout 0.5
 
-            #jump to scene5
+            jump scene5
             return
 
     stop music fadeout 0.5
@@ -318,7 +318,7 @@ label scene3:
     if proposeAya == True:
         scene black with dissolve
 
-        "{i}Plus tard dans la nuit, une fois le concert fini."
+        narrator "{i}Plus tard dans la nuit, une fois le concert fini."
 
         show ebisuStreetNight with dissolve
 
@@ -364,5 +364,5 @@ label scene3:
 
         stop music fadeout 0.5
 
-        #jump to sceneX
+        jump sceneAX
         return

@@ -1,6 +1,6 @@
 label scene1:
     scene classroomExt with dissolve
-    "{i}Lundi 5 septembre 2022, 8h03"
+    narrator "{i}Lundi 5 septembre 2022, 8h03"
     play sound "audio/fx/classroom.mp3" volume 0.1 fadein 1.0
 
     show adamuSmileSchool with dissolve
@@ -37,19 +37,19 @@ label scene1:
     scene classroomExt with dissolve
     play music "audio/ost/scattered_flowers.mp3" volume 0.1 loop fadein 1.0
 
-    "{i}C'est alors qu'une sillouhette elancée se dessina devant lui."
-    "{i}Contre toute attente, il reconnu une beauté innoncente."
-    "{i}Comment pourrait-il l'oublier."
-    "{i}Ce jour-là l'humanité s'en est souvenue."
+    narrator "{i}C'est alors qu'une sillouhette elancée se dessina devant lui."
+    narrator "{i}Contre toute attente, il reconnu une beauté innoncente."
+    narrator "{i}Comment pourrait-il l'oublier."
+    narrator "{i}Ce jour-là l'humanité s'en est souvenue."
 
     show ayaSurprise with dissolve
 
     noname "Oh mais c'est toi !"
 
 
-    "{i}À ce moment il comprit."
-    "{i}Son instinct de PALM ne le trompait jamais: c’était ce qu’il appelait une « Hlel »."
-    "{i}Une fille pudique, innocente et qui se retrouvait décontenancée en parlant avec un homme."
+    narrator "{i}À ce moment il comprit."
+    narrator "{i}Son instinct de PALM ne le trompait jamais: c’était ce qu’il appelait une « Hlel »."
+    narrator "{i}Une fille pudique, innocente et qui se retrouvait décontenancée en parlant avec un homme."
 
     scene classroomExt with dissolve
 
@@ -80,18 +80,18 @@ label scene1:
 
 
     "Yoshida" "Bonjour, je m'appelle Yoshida et je serai votre professeur principal pour ce semestre."
-    "Rentrons dans le vif du sujet sans tarder."
-    "Ce semestre, vous aurez un projet d'informatique à réaliser en binôme."
-    "Le choix du binôme est libre, bien évidemment."
+    narrator "Rentrons dans le vif du sujet sans tarder."
+    narrator "Ce semestre, vous aurez un projet d'informatique à réaliser en binôme."
+    narrator "Le choix du binôme est libre, bien évidemment."
 
     hide yoshida with dissolve
 
-    "{i}Alors que les groupes commencaient à se former et à discuter entre eux, la petite Aya semblait esseulée."
+    narrator "{i}Alors que les groupes commencaient à se former et à discuter entre eux, la petite Aya semblait esseulée."
 
     show ayaCalm
 
-    "{i}Adam ne resta pas insensible à la détresse d'Aya. Dès lors, il activa le mode « Bête de Guerre »."
-    "{i}C'est avec un air confiant, presque sournois, qu'il s'approcha à pas de loup d'Aya."
+    narrator "{i}Adam ne resta pas insensible à la détresse d'Aya. Dès lors, il activa le mode « Bête de Guerre »."
+    narrator "{i}C'est avec un air confiant, presque sournois, qu'il s'approcha à pas de loup d'Aya."
 
     scene classroomInt with dissolve
     show adamuSmileSchool at left with dissolve
@@ -115,7 +115,7 @@ label scene1:
 
     scene classroomInt with dissolve
 
-    "{i}Le cours se termina et les élèves commencaient à rentrer chez eux."
+    narrator "{i}Le cours se termina et les élèves commencaient à rentrer chez eux."
 
     scene corridorsSchool with dissolve
     show adamuSmileSchool at left with dissolve
@@ -135,8 +135,8 @@ label scene1:
     show adamuStun at left
     adamu "Ah oui, le projet bien sûr."
 
-    "{i}Evidemment notre ventre-en-coeur ne l’entendit pas de cette oreille."
-    "{i}Les dieux étaient avec lui, il savait que cette demande n'était pas anodine."
+    narrator "{i}Evidemment notre ventre-en-coeur ne l’entendit pas de cette oreille."
+    narrator "{i}Les dieux étaient avec lui, il savait que cette demande n'était pas anodine."
 
 
 
@@ -162,9 +162,9 @@ label scene1:
             show streetEve with dissolve
             play music "audio/ost/hero.mp3" volume 0.1  fadein 1.0
 
-            "{i}Sur le chemin du retour, Adamu remercia les cieux de la bonne fortune qui l’avait touché."
-            "{i}Enfin, il commencait à arpenter la voie légendaire de Maru Arufa, samouraï du passé et symbole de virilité pour notre héros."
-            "{i}Ainsi se termina la rentrée de notre jeunot, il pouvait se reposer il l'avait bien mérité."
+            narrator "{i}Sur le chemin du retour, Adamu remercia les cieux de la bonne fortune qui l’avait touché."
+            narrator "{i}Enfin, il commencait à arpenter la voie légendaire de Maru Arufa, samouraï du passé et symbole de virilité pour notre héros."
+            narrator "{i}Ainsi se termina la rentrée de notre jeunot, il pouvait se reposer il l'avait bien mérité."
 
             stop music
             jump scene3
@@ -184,7 +184,7 @@ label scene1:
             stop music
 
             scene black with dissolve
-            "{i}Chambre d'Adam, 19h07"
+            narrator "{i}Chambre d'Adam, 19h07"
 
             scene adamu_room with dissolve
 
@@ -260,7 +260,7 @@ label scene1:
                                     show adamuChillJoy
                                     adamu "J'ai fait le bon choix, c'est sûr !"
                                     return
-                                    #jump to scene 5
+                                    jump scene5
 
                         "Non, attendre un peu. " :
                             show adamuChill
@@ -319,5 +319,5 @@ label scene1:
 
                             stop music
 
-                            #jump to scene 5
+                            jump scene5
 

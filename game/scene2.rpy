@@ -5,7 +5,7 @@ label scene2:
 
     scene black with dissolve
 
-    "{i}Le lendemain, devant le CROUS. 12h03.{/i}"
+    narrator "{i}Le lendemain, devant le CROUS. 12h03.{/i}"
 
     scene frontSchool with dissolve
 
@@ -121,7 +121,7 @@ label scene2_1:
     stop music fadeout 2.0
     play sound "audio/fx/exclamation.mp3" volume 0.5
 
-    "{i}Aya venait d'arriver au réfectoire du CROUS, elle suprend au loin Adamu en train de déjeuner avec Mami. Adam croisa son regard et l'évita aussitôt{/i}"
+    narrator "{i}Aya venait d'arriver au réfectoire du CROUS, elle suprend au loin Adamu en train de déjeuner avec Mami. Adam croisa son regard et l'évita aussitôt{/i}"
 
     scene cafeteriaSchool with dissolve
 
@@ -191,7 +191,7 @@ label scene2_1:
 
     stop music fadeout 2.0
 
-    "{i}Mami et Adamu marchèrent le temps de la digestion...{/i}"
+    narrator "{i}Mami et Adamu marchèrent le temps de la digestion...{/i}"
 
     scene frontSchool with dissolve
 
@@ -232,11 +232,11 @@ label scene2_1:
     play music "audio/ost/bwb_encounter.mp3" volume 0.3 fadein 2.0 loop
 
 
-    "{i}La sonnerie retentit, les cours ayant repris Adam se précipita vers la classe.{/i}"
+    narrator "{i}La sonnerie retentit, les cours ayant repris Adam se précipita vers la classe.{/i}"
 
     scene corridorsSchool with dissolve
 
-    "{i}Il arriva en retard de 4 minutes au cours d’informatique dont la séance était dédiée au projet...{/i}"
+    narrator "{i}Il arriva en retard de 4 minutes au cours d’informatique dont la séance était dédiée au projet...{/i}"
 
     play sound "audio/fx/classroom.mp3" volume 0.1 fadein 2.0
     scene classroomSchool with dissolve
@@ -290,8 +290,8 @@ label scene2_1:
 
     scene classroomSchool with dissolve
     play sound "audio/fx/anime_wow.mp3" volume 0.3
-    "{i}À ce moment tout se passait bien, l’opération de sauvetage miraculeux eut été une réussite.{/i}"
-    "{i}Sans même mentir Adamu s’était tiré d’affaire. À vrai dire mentir provoque toujours des retombées.{/i}"
+    narrator "{i}À ce moment tout se passait bien, l’opération de sauvetage miraculeux eut été une réussite.{/i}"
+    narrator "{i}Sans même mentir Adamu s’était tiré d’affaire. À vrai dire mentir provoque toujours des retombées.{/i}"
 
     show ayaBlushed at left with dissolve
     show adamuConfident at right with dissolve
@@ -393,7 +393,7 @@ label scene2_2:
             jump scene2_mami_dm
         "...":
             scene cafeteriaSchool
-            "{i}Le déjeuner se passa sans accrocs. {/i}"
+            narrator "{i}Le déjeuner se passa sans accrocs. {/i}"
             scene frontSchool with dissolve
             show adamuConfident at right with dissolve
             show mamiStoic at left with dissolve
@@ -404,9 +404,9 @@ label scene2_2:
             mami "Euh ouais pourquoi pas..."
             mami "Bon allez à plus !"
             scene black with dissolve
-            "{i}La journée se termina pour Adamu. Les jours passèrent sans nouvelles de Mami...{/i}"
+            narrator "{i}La journée se termina pour Adamu. Les jours passèrent sans nouvelles de Mami...{/i}"
             return
-            # jump scene5
+            jump scene5
             
             
 label scene2_1_1:
@@ -433,7 +433,7 @@ label scene2_1_1:
 
     scene classroomSchool with dissolve
 
-    "{i}Finalement pendant toute l’heure restante ils n’auront discuté que du projet. Adamu est en train mauvaise posture. Mais ce qu’il s’apprêtait à voir en sortant de la salle était terrible...{/i}"
+    narrator "{i}Finalement pendant toute l’heure restante ils n’auront discuté que du projet. Adamu est en train mauvaise posture. Mais ce qu’il s’apprêtait à voir en sortant de la salle était terrible...{/i}"
 
     show adamuSorry at right with dissolve
     show ayaCalm at left with dissolve
@@ -456,7 +456,7 @@ label scene2_1_1:
 
     scene classroomSchool with dissolve
 
-    "{i}Aya était en larme, elle parti en courant.{w} Toute la salle était abasourdie face à la scène, des murmures se faisaient entendre, rien de bon pour la réputation de notre Majin Boo national{/i}"
+    narrator "{i}Aya était en larme, elle parti en courant.{w} Toute la salle était abasourdie face à la scène, des murmures se faisaient entendre, rien de bon pour la réputation de notre Majin Boo national{/i}"
 
     jump scene2_mami_dm
 
@@ -475,7 +475,7 @@ label scene2_1_2:
     show ayaCuteAngry at left
     aya "Non du tout tu dis n'importe quoi, comme d'habitude..."
     scene classroomSchool with dissolve
-    "{i}Et leur petite scène de ménage continua. Ils étaient tellement mignons que beaucoup dans la salle pensaient à la formation même d'un couple à cet instant.{/i}"
+    narrator "{i}Et leur petite scène de ménage continua. Ils étaient tellement mignons que beaucoup dans la salle pensaient à la formation même d'un couple à cet instant.{/i}"
     show adamuConfident at right with dissolve
     show ayaLaugh at left with dissolve
     adamu "Et c'est comme ça que ma mère m'a suprise sur Twitter en train de dire que j'allais niquer des daronnes !"
@@ -505,13 +505,13 @@ label scene2_1_2:
     play sound "audio/fx/pourquoi_pas.mp3" volume 0.7 fadeout 2.0
     adamu "LET'S GO ! BORDEL DE MERDE ! OUAIS POURQUOI PAS POURQUOI PAAAAAAAAAAAAS !!!" with hpunch
     hide adamuVeryHappy with dissolve
-    "{i}À moment précis, Adamu commenceait à monter les saintes marches de la légende du P.A.L.M.{/i}"
-    "{i}Un moment historique dans sa longue vie d'ermite croupissant dans les débris de sa chambre morose.{/i}"
-    "{i}Il venait d'obtenir le premier date de toute sa vie. Plus rien ne sera comme avant. {/i}"
-    "{i}Nom de code de l'opération: PLAN D(ate){/i}"
+    narrator "{i}À moment précis, Adamu commenceait à monter les saintes marches de la légende du P.A.L.M.{/i}"
+    narrator "{i}Un moment historique dans sa longue vie d'ermite croupissant dans les débris de sa chambre morose.{/i}"
+    narrator "{i}Il venait d'obtenir le premier date de toute sa vie. Plus rien ne sera comme avant. {/i}"
+    narrator "{i}Nom de code de l'opération: PLAN D(ate){/i}"
     scene black with dissolve
     stop music fadeout 2.0
-    "{i}Les jours passèrent. {w} Le jour saint du date arriva.{w}{/i}"
+    narrator "{i}Les jours passèrent. {w} Le jour saint du date arriva.{w}{/i}"
     jump scene3
     return
 
@@ -521,7 +521,7 @@ label scene2_mami_dm:
 
     play music "audio/ost/papakatsu.mp3" volume 0.3 loop fadein 1.0
 
-    "{i}Adamu, de retour chez lui. 23h34.{/i}"
+    narrator "{i}Adamu, de retour chez lui. 23h34.{/i}"
 
     scene adamuRoom with dissolve
 
@@ -579,9 +579,9 @@ label scene2_1_1_2:
     adamu "Bon en vrai la flemme de la voir, c'est trop pour moi aujourd'hui... {w} Je vais tag une petite game et ensuite dodo."
     
     scene black with dissolve
-    "{i}Fin de journée pour Adamu{i}"
+    narrator "{i}Fin de journée pour Adamu{i}"
 
-    # Jump scene 5
+    jump scene5
     return
 
   

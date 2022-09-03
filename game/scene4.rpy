@@ -1,6 +1,6 @@
 label scene4:
     scene black with dissolve
-    "{i}00h03, Parc Georges Valbon.{/i}"
+    narrator "{i}00h03, Parc Georges Valbon.{/i}"
     scene parkNight with dissolve
     play music "audio/ost/lone_sojourner.mp3" fadein 2.0 volume 0.2 loop
     show adamuStoicOut with dissolve
@@ -26,13 +26,13 @@ label scene4:
     adamu "On y va let's go, que la bénédiction des rats soit sur moi ce soir..."
     scene black with dissolve
     play music "audio/ost/love_dramatic.mp3" fadein 2.5 volume 0.2 loop
-    "{i}Adamu traversa le parc pour rejoindre Mami qui l'attendait à l'autre bout.{/i}"
-    "{i}Que va-t-il advenir à notre héro au ventre-en-cœur ?{/i}"
-    "{i}Nous le saurons dans un instant, juste après la pub.{/i}"
-    "{i}Est-ce que vous avez déjà entendu parler de Nord VPN ?{/i}"
-    "{i}Et bien en réalité vous pouvez vous connecter{w}... Non je déconne on a pas le temps pour ces conneries.{/i}"
-    "{i}Avoue que tu y a cru petit batard hein ?{/i}"
-    "{i}Allez c'était le Highlight du narrateur, désormais place à l'aventure de notre Rguig National.{/i}"
+    narrator "{i}Adamu traversa le parc pour rejoindre Mami qui l'attendait à l'autre bout.{/i}"
+    narrator "{i}Que va-t-il advenir à notre héro au ventre-en-cœur ?{/i}"
+    narrator "{i}Nous le saurons dans un instant, juste après la pub.{/i}"
+    narrator "{i}Est-ce que vous avez déjà entendu parler de Nord VPN ?{/i}"
+    narrator "{i}Et bien en réalité vous pouvez vous connecter{w}... Non je déconne on a pas le temps pour ces conneries.{/i}"
+    narrator "{i}Avoue que tu y a cru petit batard hein ?{/i}"
+    narrator "{i}Allez c'était le Highlight du narrateur, désormais place à l'aventure de notre Rguig National.{/i}"
     stop music fadeout 2.0
     scene parkNightBench with dissolve
     show adamuSmileOut at right with dissolve
@@ -179,16 +179,16 @@ label scene4:
                     adamu "Euh ouais bien sûr je savais pas si tu voulais... en fait... c'est que..."
 
             scene parkNightBench with dissolve
-            "{i}C'est sur ces belles paroles que notre ancien déchet de la société venait de réaliser l'impensable.{/i}"
-            "{i}Ce jour là, l'humanité s'en est souvenu.{/i}"
-            "{i}Sa beu-teu aussi.{/i}"
-            "{i}Il venait de s'évader des égouts. Désormais plus rien ne sera comme avant.{/i}"
-            "{i}Laissant derrière lui nombre de rats condamnés à errer dans les bas-fonds, sans aucun espoir, sans aucune lueur.{/i}"
-            "{i}C'était justement pour tout ces malheureux qu'Adamu avait prit son courage à deux main.{/i}"
-            "{i}Il se devait de le faire, par respect pour ses semblables bannis.{/i}"
-            "{i}Ainsi commençait sa nouvelle vie d'homme heureux, au côté de sa belle et douce dulciné.{/i}"
+            narrator "{i}C'est sur ces belles paroles que notre ancien déchet de la société venait de réaliser l'impensable.{/i}"
+            narrator "{i}Ce jour là, l'humanité s'en est souvenu.{/i}"
+            narrator "{i}Sa beu-teu aussi.{/i}"
+            narrator "{i}Il venait de s'évader des égouts. Désormais plus rien ne sera comme avant.{/i}"
+            narrator "{i}Laissant derrière lui nombre de rats condamnés à errer dans les bas-fonds, sans aucun espoir, sans aucune lueur.{/i}"
+            narrator "{i}C'était justement pour tout ces malheureux qu'Adamu avait prit son courage à deux main.{/i}"
+            narrator "{i}Il se devait de le faire, par respect pour ses semblables bannis.{/i}"
+            narrator "{i}Ainsi commençait sa nouvelle vie d'homme heureux, au côté de sa belle et douce dulciné.{/i}"
             stop music
-            return
+            jump sceneMX
 
         "Fuite":
             scene parkNightBench
@@ -198,14 +198,14 @@ label scene4:
             mami "Ah ouais tu trouves... ouais en vrai c'est ça..."
             scene parkNightBench with dissolve
             play music "audio/ost/dramatic_kaguya.mp3" volume 0.3 loop
-            "{i}Quelle erreur.{/i}"
-            "{i}À cet instant précis, Adamu ne le savait pas. Il venait de commettre l'irréparable.{/i}"
-            "{i}Leur rendez-vous nocturne se termina assez rapidement. Mami pretextant avoir à faire chez elle.{/i}"
-            "{i}En rentrant chez lui, Adamu se rendit compte que Mami était en 'gris' sur Sunapuchattu.{/i}"
-            "{i}Il comprit à ce moment. En l'espace d'une journée il venait de perdre Aya et Mami.{/i}"
-            "{i}Finalement, comme on dit dans les égouts: l'espoir n'accorde qu'une simple danse aux rats.{/i}"
-            "{i}Il fallait désormais repartir de zéro. Il aurait fallut un miracle pour tirer notre individu de cette situation.{/i}"
-            "{i}Et les miracles, {w} s'arrêtent à la porte du condamné.{/i}"
+            narrator "{i}Quelle erreur.{/i}"
+            narrator "{i}À cet instant précis, Adamu ne le savait pas. Il venait de commettre l'irréparable.{/i}"
+            narrator "{i}Leur rendez-vous nocturne se termina assez rapidement. Mami pretextant avoir à faire chez elle.{/i}"
+            narrator "{i}En rentrant chez lui, Adamu se rendit compte que Mami était en 'gris' sur Sunapuchattu.{/i}"
+            narrator "{i}Il comprit à ce moment. En l'espace d'une journée il venait de perdre Aya et Mami.{/i}"
+            narrator "{i}Finalement, comme on dit dans les égouts: l'espoir n'accorde qu'une simple danse aux rats.{/i}"
+            narrator "{i}Il fallait désormais repartir de zéro. Il aurait fallut un miracle pour tirer notre individu de cette situation.{/i}"
+            narrator "{i}Et les miracles, {w} s'arrêtent à la porte du condamné.{/i}"
             stop music
-            return
+            jump scene5
              

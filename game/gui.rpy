@@ -64,10 +64,10 @@ define gui.name_text_font = "fonts/Caveat-Semibold.ttf"
 define gui.interface_text_font = "fonts/Caveat-Bold.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 54
+define gui.text_size = 44
 
 ## The size of character names.
-define gui.name_text_size = 44
+define gui.name_text_size = 40
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 42
@@ -76,10 +76,11 @@ define gui.interface_text_size = 42
 define gui.label_text_size = 36
 
 ## The size of text on the notify screen.
-define gui.notify_text_size = 24
+define gui.notify_text_size = 30
 
 ## The size of the game's title.
 define gui.title_text_size = 75
+
 
 
 ## Main and Game Menus #########################################################

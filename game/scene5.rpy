@@ -5,11 +5,11 @@ label scene5:
     play sound "audio/fx/light_rain.mp3" volume 0.2 loop
 
 
-    "{i}Deux mois s'étaient déjà écoulés depuis la rentrée."
-    "{i}Les moments passés avec Aya et Mami semblaient si loin désormais..."
-    "{i}Tout comme les derniers rayons de soleil laissaient place à la pluie."
+    narrator "{i}Deux mois s'étaient déjà écoulés depuis la rentrée."
+    narrator "{i}Les moments passés avec Aya et Mami semblaient si loin désormais..."
+    narrator "{i}Tout comme les derniers rayons de soleil laissaient place à la pluie."
 
-    "{i}Acte V - All is (not) lost."
+    narrator "{i}Acte V - All is (not) lost."
 
     stop sound
 
@@ -33,7 +33,7 @@ label scene5:
     adamu "Bonsoir, on se connaît ?"
     naji "Tu t'appelles Adamu, c'est ça ? On est dans la même classe, moi c'est Najimo."
     adamu "Ah... Enchanté !"
-    adamu "{i}C'est bizarre je ne l'ai jamais remarqué pourtant un beau gosse pareil ne passe pas inaperçu..."
+    adamu "{i}C'est bizarre je ne l'ai jamais remarqué, pourtant un beau gosse pareil ne passe pas inaperçu..."
     adamu "{i}Oula qu'est-ce que je raconte moi !"
     naji "Alors, tu faisais quoi dans le coin ?"
     adamu "J'ai pris un truc à manger avant de rentrer chez moi."
@@ -42,7 +42,7 @@ label scene5:
     adamu "Non et puis c'est pas trop mon truc..."
     adamu "Je me sens pas très bien en ce moment à vrai dire."
     naji "Justement, rejoindre une asso pourrait être un bon moyen de te changer les idées."
-    naji "Tu pourrais renconter du monde et te faire des amis qui partagent la même passion."
+    naji "Tu pourrais rencontrer du monde et te faire des amis qui partagent la même passion."
     adamu "Sûrement, ouais..."
     adamu "{i}Je me sens tellement vide en ce moment...Et s'il avait raison ?"
     naji "Passe demain à la salle E205 à partir de 10h, je crois que c'est une nouvelle association qui recrute."
@@ -58,7 +58,7 @@ label scene5:
 
     scene black with dissolve
 
-    "{i}Le lendemain matin..."
+    narrator "{i}Le lendemain matin..."
 
     show meetingRoom with dissolve
 
@@ -269,21 +269,21 @@ label scene5:
     adamu "Avec plaisir !"
     hide najimoCalm
 
-    "{i}Les deux étudiants passèrent tout l'après-midi à nettoyer le terrain. Peu à peu Adamu s'ouvrait à Najimo et lui raconta ses aventures avec Aya et Mami."
-    "{i}Il faut dire que depuis qu'Adamu courrait après les filles, il avait complètement délaissé ses amis."
-    "{i}Pouvoir parler à quelqu'un sans langue de bois, sans réfléchir à ce qu'on allait dire, Adamu avait oublié cette liberté."
-    "{i}Les jours suivant furent plus calmes, Adamu continua de traîner avec Najimo. Cette nouvelle amitié naissante remonta le moral de notre héros."
+    narrator "{i}Les deux étudiants passèrent tout l'après-midi à nettoyer le terrain. Peu à peu Adamu s'ouvrait à Najimo et lui raconta ses aventures avec Aya et Mami."
+    narrator "{i}Il faut dire que depuis qu'Adamu courrait après les filles, il avait complètement délaissé ses amis."
+    narrator "{i}Pouvoir parler à quelqu'un sans langue de bois, sans réfléchir à ce qu'on allait dire, Adamu avait oublié cette liberté."
+    narrator "{i}Les jours suivant furent plus calmes, Adamu continua de traîner avec Najimo. Cette nouvelle amitié naissante remonta le moral de notre héros."
 
     stop music fadeout 0.5
 
     scene black with dissolve
     play music "audio/ost/moulaga.mp3" volume 0.2 loop
 
-    "{i}Puis la soirée tant attendue arriva."
-    "{i}C'était le moment où tous les étudiants se lâchaient et révelaient leur vrai nature."
-    "{i}Il faut dire qu'avec l'alcool qui coule à flots et des tenues légères, celà facilait les choses."
-    "{i}Les bonnes comme les moins bonnes."
-    "{i}Sikusu Night - 03:17"
+    narrator "{i}Puis la soirée tant attendue arriva."
+    narrator "{i}C'était le moment où tous les étudiants se lâchaient et révelaient leur vrai nature."
+    narrator "{i}Il faut dire qu'avec l'alcool qui coule à flots et des tenues légères, celà facilait les choses."
+    narrator "{i}Les bonnes comme les moins bonnes."
+    narrator "{i}Sikusu Night - 03:17"
 
     show sikusu_party with dissolve
 
@@ -309,14 +309,14 @@ label scene5:
     kuro "Bien sûuur, ze vais bien !"
     kuro "Viens on va danzer sur la biste..."
     adamu "{i}Elle est arrachée... Elle me propose de danser, ça sent pas bon cette histoire."
-    adamu "{i}Mais je ne peux pas la laisser dans cet état alors autant profitier."
+    adamu "{i}Mais je ne peux pas la laisser dans cet état alors autant profiter."
     adamu "{i}On reverra plus tard pour la fidélité au PALM..."
 
-    "{i}Adamu et Kurome commencèrent à danser. Au fur et à mesure que la musique avancait, leur corps se rapprochaient."
-    "{i}Une telle proximité avec une femme, Adamu n'avait jamais connu une telle chose. Que ce soit avec Aya ou Mami il n'était jamais arrivé à ce stade."
-    "{i}Kurome l'enlaça et le serra dans ses bras. Leurs jambes s'entrêmelaient et leurs bras s'enchevêtraient."
-    "{i}Cette image rappela à Adamu son TP de brassage interchromosomique en Terminale."
-    "{i}Il ne pu s'empêcher d'avoir le surligneur actif, le barreau donc."
+    narrator "{i}Adamu et Kurome commencèrent à danser. Au fur et à mesure que la musique avancait, leur corps se rapprochaient."
+    narrator "{i}Une telle proximité avec une femme, Adamu n'avait jamais connu une telle chose. Que ce soit avec Aya ou Mami il n'était jamais arrivé à ce stade."
+    narrator "{i}Kurome l'enlaça et le serra dans ses bras. Leurs jambes s'entrêmelaient et leurs bras s'enchevêtraient."
+    narrator "{i}Cette image rappela à Adamu son TP de brassage interchromosomique en Terminale."
+    narrator "{i}Il ne pu s'empêcher d'avoir le surligneur actif, le barreau donc."
 
     kuro "Hé, embraze boi !"
     adamu "{i}Quoi elle veut que je l'ignite ?"
@@ -349,7 +349,7 @@ label scene5:
     hide najimoCalm
     show najimoMean
     play sound "audio/fx/collision.mp3" volume 0.2
-    naji "HEY LES GARS, REGARDEZ UNE FILLE BOUREE SE FAIT ABUSER !" with hpunch
+    naji "HEY LES GARS, REGARDEZ UNE FILLE BOUREE SE FAIT ABUSER !!!" with hpunch
     naji "Ce mec là c'est Adamu et il l'a forcé à l'embrasser !"
     adamu "Najimo ? Mais qu'est-ce que tu racontes !!!"
     adamu "Ecoutez-moi tous !!! Ce n'est pas vrai, je n'ai pas fait ça !"
@@ -409,8 +409,8 @@ label scene5:
     show najimoMean
     naji "Sache une chose, les corbeaux auront toujours le dernier mot."
 
-    "{i}Adamu resta muet tout le long mais compris la situation.{/i}"
-    "{i}Cette fois-ci c'était du sérieux et s'il ne réagissait pas maintenant il serait définitivement fichu.{/i}"
+    narrator "{i}Adamu resta muet tout le long mais compris la situation.{/i}"
+    narrator "{i}Cette fois-ci c'était du sérieux et s'il ne réagissait pas maintenant il serait définitivement fichu.{/i}"
 
     menu :
         adamu "{i}Merde, il faut que je réagisse !"
@@ -442,17 +442,17 @@ label scene5:
             show najimoMean
             play sound "audio/fx/bump.mp3" volume 0.1
             stop music
-            naji "MAIS FERME LÀ BOUFFON !!!" with hpunch
+            naji "MAIS FERME LAAAAA BOUFFON !!!" with hpunch
             hide najimoMean
             show najimoLaugh
             naji "Répète sans miauler pour voir."
             scene black with dissolve
             play music "audio/ost/despair.mp3" volume 0.1 loop
-            "{i}Comment raisonner un corbeau, Najimo avait sombré dans la folie, c'était perdu d'avance."
-            "{i}La police ne mit pas longtemps à arriver. Ils embarquèrent le suspect et le placèrent en garde à vue."
-            "{i}Adamu tenta d'expliquer la situation mais personne ne le prit au sérieux."
-            "{i}Il fut relâché trois jours plus tard. Son honneur était bafoué et sa réputation ternie."
-            "{i}Qui sait comment allait se dérouler les jours suivant désormais..."
+            narrator "{i}Comment raisonner un corbeau, Najimo avait sombré dans la folie, c'était perdu d'avance."
+            narrator "{i}La police ne mit pas longtemps à arriver. Ils embarquèrent le suspect et le placèrent en garde à vue."
+            narrator "{i}Adamu tenta d'expliquer la situation mais personne ne le prit au sérieux."
+            narrator "{i}Il fut relâché trois jours plus tard. Son honneur était bafoué et sa réputation ternie."
+            narrator "{i}Qui sait comment allait se dérouler les jours suivant désormais..."
 
             stop music fadeout 0.5
             jump endingAlt
@@ -463,11 +463,11 @@ label scene5:
             naji "Il s'enfuit ! Arrêtez-le !"
             play sound "audio/fx/bump.mp3" volume 0.2
             scene black with dissolve
-            "{i}La tentative d'évasion d'Adamu fut vaine, la salle entière se jeta contre lui et le roua de coups."
-            "{i}La police ne mit pas longtemps à arriver. Ils embarquèrent le suspect et le placèrent en garde à vue."
-            "{i}Adamu tenta d'expliquer la situation mais personne ne le prit au sérieux."
-            "{i}Il fut relâché trois jours plus tard. Son honneur était bafoué et sa réputation ternie."
-            "{i}Qui sait comment allait se dérouler les jours suivant désormais..."
+            narrator "{i}La tentative d'évasion d'Adamu fut vaine, la salle entière se jeta contre lui et le roua de coups."
+            narrator "{i}La police ne mit pas longtemps à arriver. Ils embarquèrent le suspect et le placèrent en garde à vue."
+            narrator "{i}Adamu tenta d'expliquer la situation mais personne ne le prit au sérieux."
+            narrator "{i}Il fut relâché trois jours plus tard. Son honneur était bafoué et sa réputation ternie."
+            narrator "{i}Qui sait comment allait se dérouler les jours suivant désormais..."
 
             stop music fadeout 0.5
             jump endingAlt

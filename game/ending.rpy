@@ -1,22 +1,22 @@
 label ending:
     scene black with dissolve
     stop music fadeout 3.0
-    "{i}Adamu avait cessé de suivre les cours depuis plusieurs jours.{/i}"
-    "{i}En un jour pluvieux, il n'arrivait plus à supporter sa vie.{/i}"
+    narrator "{i}Adamu avait cessé de suivre les cours depuis plusieurs jours.{/i}"
+    narrator "{i}En un jour pluvieux, il n'arrivait plus à supporter sa vie.{/i}"
 
     play sound "audio/fx/rain.mp3" volume 0.3 loop fadeout 5
     play music "audio/ost/bakamitai_radio.mp3" volume 0.1 loop
     scene rainStreet with dissolve
-    "{i}Là, dans cette ruelle aux sournois appels.{i}"
-    "{i}Adamu s'en allait marcher sans savoir où aller.{i}"
-    "{i}Finalement il s'arrêta devant une taverne malfamé. {w}Les vrais rats reconnaissent les ratelières.{i}"
+    narrator "{i}Là, dans cette ruelle aux sournois appels.{i}"
+    narrator "{i}Adamu s'en allait marcher sans savoir où aller.{i}"
+    narrator "{i}Finalement il s'arrêta devant une taverne malfamé. {w}Les vrais rats reconnaissent les ratelières.{i}"
 
     stop sound
     scene tavernDark with dissolve
     play sound "audio/fx/bar_ambiance.mp3" volume 0.1 loop
-    "{i}Cette enseigne semblait être fréquentée des désoeuvrés.{/i}"
-    "{i}Les gémissements d'agonies se faisaient entendre de toute part.{/i}"
-    "{i}Adamu commanda un bon vieux verre de Ricard pour broyer du noir.{/i}"
+    narrator "{i}Cette enseigne semblait être fréquentée des désoeuvrés.{/i}"
+    narrator "{i}Les gémissements d'agonies se faisaient entendre de toute part.{/i}"
+    narrator "{i}Adamu commanda un bon vieux verre de Ricard pour broyer du noir.{/i}"
     noname "Bah alors mon petit gars, qu'est-ce qu'il t'arrives à toi ?"
     show tinoSmile with dissolve
     noname "T'as pas l'air dans ton assiette, hein..."

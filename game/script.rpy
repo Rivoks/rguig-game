@@ -12,7 +12,11 @@ define naji = Character("Najimo", color="#c52ad8")
 define characterSize = .8
 image credits_video = Movie(size=(1920,1080), channel="movie", play="video/credits.webm", loop=False)
 
+define narrator = Character('', window_top_padding=-10, what_prefix="{i}", what_suffix="{/i}", what_color="#eeffc3")  
+
+
 init python:
+
 
     config.underlay.append(
         renpy.Keymap(
@@ -428,11 +432,13 @@ init:
 # The game starts here.
 
 label start:
-
+    stop music
     scene adamuRoom
 
-    "{i}Montmorency, dans les tréfons du 95.{/i}"
-    "{i}Dans la pénombre de sa chambre miteuse, c’est à la lumière bleutée de son téléphone qu’un jeune homme allait apprendre la nouvelle qui allait tout changer...{/i}"
+
+    narrator "{i}Montmorency, dans les tréfons du 95.{/i}"
+    narrator "{i}Dans la pénombre de sa chambre miteuse, c’est à la lumière bleutée de son téléphone...{/i}"
+    narrator "{i}Qu’un jeune homme allait apprendre la nouvelle qui allait tout changer...{/i}"
 
 
     play music "audio/ost/violet_sky.mp3" volume 0.1 loop fadein 1.0
@@ -446,7 +452,7 @@ label start:
 
     play sound "audio/fx/notification.mp3" volume 0.2
 
-    "{i}*Téléphone vibre, Adam reçoit une notification*{/i}"
+    narrator "{i}*Téléphone vibre, Adam reçoit une notification*{/i}"
 
     scene msgAdmissL2 with dissolve
     pause 2
@@ -467,18 +473,18 @@ label start:
 
     hide adamuChillJoy with dissolve
 
-    "{i}Incroyable ! Pour la première fois en trois ans, cet ignoble individu valida sa première année universitaire.{/i}"
-    "{i}Si jusqu’ici toutes les portes lui paraissaient fermées, désormais plus rien ne semblait arrêter celui que l’on nommait « Venturu-en-kokoro ».{/i}"
-    "{i}Cette première réussite marqua le début d'une nouvelle ère. Bien conscient qu'il devra faire face à la dure réalité du monde étudiant universitaire, l'heure n'était pas aux inquiétudes.{/i}"
-    "{i}En effet, celui-ci ne rêvait que d’une seule chose : réussir à trouver sa première copine.{/i}"
-    "{i}En plus de 20 ans d'existence, il n'avait jamais établi le moindre contact physique avec une fille.{/i}"
-    "{i}C'est alors que rongé par le désespoir, le calbute rempli de mayonnaise, il décida de rejoindre l’organisation PALM pour changer le cours de son sinistre destin.{/i}"
+    narrator "{i}Incroyable ! Pour la première fois en trois ans, cet ignoble individu valida sa première année universitaire.{/i}"
+    narrator "{i}Si jusqu’ici toutes les portes lui paraissaient fermées, désormais plus rien ne semblait arrêter celui que l’on nommait « Venturu-en-kokoro ».{/i}"
+    narrator "{i}Cette première réussite marqua le début d'une nouvelle ère. Bien conscient qu'il devra faire face à la dure réalité du monde étudiant universitaire, l'heure n'était pas aux inquiétudes.{/i}"
+    narrator "{i}En effet, celui-ci ne rêvait que d’une seule chose : réussir à trouver sa première copine.{/i}"
+    narrator "{i}En plus de 20 ans d'existence, il n'avait jamais établi le moindre contact physique avec une fille.{/i}"
+    narrator "{i}C'est alors que rongé par le désespoir, le calbute rempli de mayonnaise, il décida de rejoindre l’organisation PALM pour changer le cours de son sinistre destin.{/i}"
 
     scene black with fade
 
     stop music fadeout 2.0 fadeout 1.0
 
-    "{i}Trois mois plus tard. Le jour de la rentrée.{/i}"
+    narrator "{i}Trois mois plus tard. Le jour de la rentrée.{/i}"
 
     adamu "Hmm..."
     play sound [ "<silence 1>", "audio/fx/anime_wow.mp3" ] volume 0.05
@@ -733,12 +739,12 @@ label start:
 
     scene chairsAmphi with dissolve
 
-    "{i}La présentation suivi son cours mais Adam fut incapable de se concentrer.{/i}"
-    "{i}Il était stupéfait par la beauté et la prestance de ce qu’il appelait une Basic White Bitch, être qu’il a toujours convoité dans ses rêves les plus profonds.{/i}"
-    "{i}Il faut dire que que cette jeune blonde à l’air désinvolte parrassait désintéressée aux premiers abords mais dégageait une certaine grâce à travers ses gestes très tendres.{/i}"
-    "{i}Adam resta circonspect, on aurait dit que le temps s'était figé pour lui.{/i}"
-    "{i}La présentation se termina sans qu'il n'ait pu rien dire.{\i}"
-    "{i}Alors qu'il se ressassait ses échecs précédents, pris dans un élan de courage, c'est avec une voix suave qu'il disa :{/i}"
+    narrator "{i}La présentation suivi son cours mais Adam fut incapable de se concentrer.{/i}"
+    narrator "{i}Il était stupéfait par la beauté et la prestance de ce qu’il appelait une Basic White Bitch, être qu’il a toujours convoité dans ses rêves les plus profonds.{/i}"
+    narrator "{i}Il faut dire que que cette jeune blonde à l’air désinvolte parrassait désintéressée aux premiers abords mais dégageait une certaine grâce à travers ses gestes très tendres.{/i}"
+    narrator "{i}Adam resta circonspect, on aurait dit que le temps s'était figé pour lui.{/i}"
+    narrator "{i}La présentation se termina sans qu'il n'ait pu rien dire.{\i}"
+    narrator "{i}Alors qu'il se ressassait ses échecs précédents, pris dans un élan de courage, c'est avec une voix suave qu'il disa :{/i}"
 
     show adamuSorry at right with dissolve
     show mamiStoic at left with dissolve
@@ -757,7 +763,7 @@ label start:
 
     scene chairs_amphi with dissolve
     show mamiStoic with dissolve
-    "{i}Cette solitude ne semblait pas l’inquiéter pour autant, elle semblait y être habituée."
+    narrator "{i}Cette solitude ne semblait pas l’inquiéter pour autant, elle semblait y être habituée."
 
     scene chairsAmphi with dissolve
     show mamiStoic at left with dissolve
@@ -781,19 +787,19 @@ label start:
     scene chairsAmphi with dissolve
     play music "audio/ost/dramatic_kaguya.mp3" volume 0.1 fadein 1.0
 
-    "{i}Adam bégaya."
-    "{i}Catastrophe. Lui qui avait passé son été à travailler son éloquence en prévision de ce genre d’opportunité retomba dans ses anciens travers."
-    "{i}Mami le fixait d’un air décontenancé sans dire un mot."
+    narrator "{i}Adam bégaya."
+    narrator "{i}Catastrophe. Lui qui avait passé son été à travailler son éloquence en prévision de ce genre d’opportunité retomba dans ses anciens travers."
+    narrator "{i}Mami le fixait d’un air décontenancé sans dire un mot."
 
     show mamiSpeaking with dissolve
-    "{i}Tout autour de lui devenait trouble, tout semblait perdu…"
+    narrator "{i}Tout autour de lui devenait trouble, tout semblait perdu…"
 
     hide mamiSpeaking
     stop music fadeout 2.0 fadeout 1.0
 
     play sound [ "<silence 1>", "audio/fx/excuse_moi.mp3" ] volume 0.2
-    "{i}Une voix retentit: « Excuse-moi si j’tai blessé… »."
-    "{i}En l’espace d’une fraction de seconde, lorsque tout semblait contre lui, Adamu demanda de manière intrépide les coordonnées de Mami."
+    narrator "{i}Une voix retentit: « Excuse-moi si j’tai blessé… »."
+    narrator "{i}En l’espace d’une fraction de seconde, lorsque tout semblait contre lui, Adamu demanda de manière intrépide les coordonnées de Mami."
 
     show adamuSpeakingSerious with dissolve
     play music "audio/ost/confess_kaguya.mp3" volume 0.1 fadein 1.0
@@ -801,12 +807,12 @@ label start:
     hide adamuSpeakingSerious
     show mamiBlush with dissolve
 
-    "{i}Surprise, Mami donna son Twittâ en détournant les yeux, comme d’un air légèrement gênée."
+    narrator "{i}Surprise, Mami donna son Twittâ en détournant les yeux, comme d’un air légèrement gênée."
     hide mamiBlush
-    "{i}Bénédiction divine, baraka du tout puissant, notre Rguig venait de réaliser l’impossible."
-    "{i}Désormais c’est sûr, plus rien ne sera comme avant."
+    narrator "{i}Bénédiction divine, baraka du tout puissant, notre Rguig venait de réaliser l’impossible."
+    narrator "{i}Désormais c’est sûr, plus rien ne sera comme avant."
     scene black with dissolve
-    "{i}La vraie rentrée se faisant dans une semaine, les jours passèrent sans trop de bruits."
+    narrator "{i}La vraie rentrée se faisant dans une semaine, les jours passèrent sans trop de bruits."
     
     stop music fadeout 2.0
     jump scene1
